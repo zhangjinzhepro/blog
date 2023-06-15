@@ -19,26 +19,26 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Material for MkDocs
-site_url: https://squidfunk.github.io/mkdocs-material/
-site_author: Martin Donath
+site_name: 云深的博客
+site_url:
+site_author: 云深
 site_description: >-
-  Write your documentation in Markdown and create a professional static site in
-  minutes – searchable, customizable, in 60+ languages, for all devices
+  路漫漫其修远兮，吾将上下而求索。
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name:
+repo_url:
 
 # Copyright
-copyright: Copyright &copy; 2016 - 2023 Martin Donath
+copyright: Copyright &copy; 2020 - present 云深
 
 # Configuration
 theme:
   name: material
+  language: zh
   custom_dir: material/.overrides
   features:
-    - announce.dismiss
+#    - announce.dismiss
     - content.action.edit
     - content.action.view
     - content.code.annotate
@@ -49,7 +49,7 @@ theme:
     # - navigation.expand
     - navigation.footer
     - navigation.indexes
-    # - navigation.instant
+     - navigation.instant
     # - navigation.prune
     - navigation.sections
     - navigation.tabs

@@ -212,30 +212,30 @@
     </div>
 
     <!-- Announcement bar -->
-    <div data-md-component="announce">
-      {% if self.announce() %}
-        <aside class="md-banner">
-          <div class="md-banner__inner md-grid md-typeset">
+<!--    <div data-md-component="announce">-->
+<!--      {% if self.announce() %}-->
+<!--        <aside class="md-banner">-->
+<!--          <div class="md-banner__inner md-grid md-typeset">-->
 
-            <!-- Button to dismiss announcement -->
-            {% if "announce.dismiss" in features %}
-              <button
-                class="md-banner__button md-icon"
-                aria-label="{{ lang.t('announce.dismiss') }}"
-              >
-                {% include ".icons/material/close.svg" %}
-              </button>
-            {% endif %}
+<!--            &lt;!&ndash; Button to dismiss announcement &ndash;&gt;-->
+<!--            {% if "announce.dismiss" in features %}-->
+<!--              <button-->
+<!--                class="md-banner__button md-icon"-->
+<!--                aria-label="{{ lang.t('announce.dismiss') }}"-->
+<!--              >-->
+<!--                {% include ".icons/material/close.svg" %}-->
+<!--              </button>-->
+<!--            {% endif %}-->
 
-            <!-- Announcement bar content -->
-            {% block announce %}{% endblock %}
-          </div>
-          {% if "announce.dismiss" in features %}
-            {% include "partials/javascripts/announce.html" %}
-          {% endif %}
-        </aside>
-      {% endif %}
-    </div>
+<!--            &lt;!&ndash; Announcement bar content &ndash;&gt;-->
+<!--            {% block announce %}{% endblock %}-->
+<!--          </div>-->
+<!--          {% if "announce.dismiss" in features %}-->
+<!--            {% include "partials/javascripts/announce.html" %}-->
+<!--          {% endif %}-->
+<!--        </aside>-->
+<!--      {% endif %}-->
+<!--    </div>-->
 
     <!-- Version warning -->
     {% if config.extra.version %}
