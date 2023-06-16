@@ -1,13 +1,18 @@
 name: Deploy
-
 on:
+  workflow_dispatch: {}
   push:
     branches:
-      - main # 监听的分支
-
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -16,14 +21,13 @@ jobs:
         with:
           node-version: 16
           cache: npm
-      - run: npm install
-
+      - run: npm ci
       - name: Build
         run: npm run docs:build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: actions/configure-pages@v2
+      - uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub 私人令牌
-          publish_dir: docs/.vitepress/dist # 部署的文件目录
-          # cname: example.com # if wanna deploy to custom domain
+          path: docs/.vitepress/dist
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
