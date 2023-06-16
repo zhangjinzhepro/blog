@@ -50,7 +50,7 @@ theme:
     - navigation.footer
     - navigation.indexes
     - navigation.instant
-    # - navigation.prune
+    - navigation.prune
     - navigation.sections
     - navigation.tabs
     # - navigation.tabs.sticky
@@ -102,17 +102,7 @@ extra:
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
-    - icon: fontawesome/brands/gitter
-      link: https://gitter.im/squidfunk/mkdocs-material
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    - icon: fontawesome/brands/python
-      link: https://pypi.org/project/mkdocs-material/
-    - icon: fontawesome/brands/mastodon
-      link: https://fosstodon.org/@squidfunk
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
+      link: https://github.com/yunshenpro
 
 # Extensions
 markdown_extensions:
@@ -238,13 +228,3 @@ nav:
     - 无题/烟台出差.md
     - 无题/马太效应.md
     - 无题/踏板效应.md
-  - Blog:
-    - blog/index.md
-    - 2022:
-      - blog/posts/blog-support-just-landed.md
-      - blog/posts/chinese-search-support.md
-    - 2021:
-      - blog/posts/the-past-present-and-future.md
-      - blog/posts/excluding-content-from-search.md
-      - blog/posts/search-better-faster-smaller.md
-
