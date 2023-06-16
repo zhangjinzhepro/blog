@@ -189,6 +189,8 @@ nav:
       - javascript/高级/预处理.md
     - 优化:
       - javascript/优化/编写高质量JavaScript代码.md
+    - 调试:
+      - javascript/调试/webApp本地真机调试.md
     - 正则:
       - javascript/正则/正则的汉字匹配问题.md
     - javascript/关于函数式编程.md
@@ -199,6 +201,9 @@ nav:
     - 工程化/前端自动化.md
     - 工程化/docker+jenkins实现自动化部署.md
     - 工程化/深入学习 webpack5.md
+  - Vue:
+    - Vue/vuex+组件封装loading.md
+    - Vue/Vue、extend、component、mixins、extends浅析.md
   - TS:
     - TS.md
   - Git:
@@ -213,8 +218,18 @@ nav:
   - HTTP:
     - HTTP/HTTP和HTTPS.md
     - HTTP/互联网协议.md
+  - HTML:
+    - HTML/HTML5和HTML4的区别.md
+    - HTML/html新增结构元素解析.md
+    - HTML/HTML无障碍.md
+    - HTML/HTML标签.md
+  - CSS:
+    - CSS/CSS中少用到的属性.md
+    - CSS/设计中的颜色.md
   - md:
     - MarkDown简易语法.md
+  - 项目管理:
+    - 项目管理/缺陷管理分析.md
   - 无题:
     - 无题/纪念左耳朵耗子.md
     - 无题/河南游.md
