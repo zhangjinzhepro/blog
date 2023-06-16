@@ -49,7 +49,7 @@ theme:
     # - navigation.expand
     - navigation.footer
     - navigation.indexes
-     - navigation.instant
+    - navigation.instant
     # - navigation.prune
     - navigation.sections
     - navigation.tabs
@@ -158,7 +158,7 @@ markdown_extensions:
 nav:
   - 主页: index.md
   - JavaScript:
-    - 类型: 
+    - 类型:
       - browser-support.md
       - 7种类型: browser-support.md
     - Creating your site: creating-your-site.md
@@ -236,3 +236,4 @@ nav:
       - blog/posts/the-past-present-and-future.md
       - blog/posts/excluding-content-from-search.md
       - blog/posts/search-better-faster-smaller.md
+  - a: https://asd.com
