@@ -19,6 +19,11 @@ export default defineConfig({
       apiKey: '6f186bf493b18009f5fd2b63a468d0e1',
       indexName: 'yunshen'
     },
+    head: [
+      [
+        'link',{ rel: 'icon', href: '/images/logo.png' }
+      ]
+    ],
     logo: {
       light: '/images/logo.png',
       dark: '/images/logo_.png',
