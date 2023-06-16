@@ -21,5 +21,5 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material mkdocs-minify-plugin
+      - run: pip install mkdocs-material mkdocs-minify-plugin mkdocs-blog-plugin
       - run: mkdocs gh-deploy --force
