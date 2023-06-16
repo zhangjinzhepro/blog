@@ -162,20 +162,21 @@ nav:
       - javascript/数据类型/原始类型和引用类型.md
       - javascript/数据类型/7种类型判断方法.md
     - 变量:
-      -
+      - docs/javascript/变量/let到底有没有变量提升.md
+      - docs/javascript/变量/解构赋值.md
+    - 运算符:
+      - javascript/运算符/逻辑运算符.md
+    - 语句:
+      - javascript/语句/表达式.md
+      - javascript/语句/语句的执行.md
     - 函数:
       - javascript/函数/执行上下文.md
       - javascript/函数/This.md
       - javascript/函数/JavaScript中的函数.md
-      - javascript/函数/变量作用域与解构赋值.md
+      - javascript/函数/变量作用域.md
     - 对象:
       - javascript/对象/JavaScript中的对象.md
       - javascript/对象/js原型与原型链与原型继承.md
-    - 语句:
-      - javascript/语句/表达式.md
-      - javascript/语句/语句的执行.md
-    - 运算符:
-      - javascript/运算符/逻辑运算符.md
     - 高级:
       - javascript/高级/Proxy.md
       - javascript/高级/宏任务和微任务.md
@@ -183,6 +184,8 @@ nav:
       - javascript/高级/预处理.md
     - 优化:
       - javascript/优化/编写高质量JavaScript代码.md
+    - 正则:
+      - javascript/正则/正则的汉字匹配问题.md
     - javascript/关于函数式编程.md
     - javascript/手写轮子函数.md
     - javascript/封装axios.md
