@@ -158,8 +158,8 @@ markdown_extensions:
 nav:
   - 主页: index.md
   - JavaScript:
-    - 类型:
-      - browser-support.md
+    - 数据类型:
+      - javascript/数据类型/原始类型和引用类型.md
       - 7种类型: browser-support.md
     - javascript/手写轮子函数.md
     - Creating your site: creating-your-site.md
