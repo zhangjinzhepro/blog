@@ -4,6 +4,7 @@ import router from "./router";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  outDir: '../dist',
   title: "云深",
   description: "",
   themeConfig: {
