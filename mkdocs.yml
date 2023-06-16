@@ -195,7 +195,7 @@ nav:
     - javascript/手写轮子函数.md
     - javascript/封装axios.md
     - javascript/ES6的Map和Set.md
-  - 前端工程化:
+  - 工程化:
     - 工程化/前端自动化.md
     - 工程化/docker+jenkins实现自动化部署.md
     - 工程化/深入学习 webpack5.md
@@ -204,7 +204,14 @@ nav:
   - Git:
     - Git/Git简易教程.md
   - 无题:
+    - 无题/纪念左耳朵耗子.md
     - 无题/河南游.md
     - 无题/烟台出差.md
     - 无题/马太效应.md
     - 无题/踏板效应.md
+  - 算法:
+    - 算法/二叉查找树.md
+    - 算法/二叉树.md
+    - 算法/复杂度分析.md
+    - 算法/数组.md
+    - 算法/链表.md
