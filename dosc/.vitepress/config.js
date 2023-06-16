@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 import routers from "./router";
-import side from "./router/side";
 import router from "./router";
 
 // https://vitepress.dev/reference/site-config
