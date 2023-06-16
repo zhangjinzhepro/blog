@@ -177,6 +177,11 @@ nav:
     - 对象:
       - javascript/对象/JavaScript中的对象.md
       - javascript/对象/js原型与原型链与原型继承.md
+    - V8:
+      - javascript/V8/V8.md
+      - javascript/V8/V8是如何提升对象访问速度.md
+      - javascript/V8/V8的垃圾回收器.md
+      - javascript/V8/V8的浏览器运行时环境.md
     - 高级:
       - javascript/高级/Proxy.md
       - javascript/高级/宏任务和微任务.md
@@ -189,3 +194,17 @@ nav:
     - javascript/关于函数式编程.md
     - javascript/手写轮子函数.md
     - javascript/封装axios.md
+    - javascript/ES6的Map和Set.md
+  - 前端工程化:
+    - 工程化/前端自动化.md
+    - 工程化/docker+jenkins实现自动化部署.md
+    - 工程化/深入学习 webpack5.md
+  - TS:
+    - TS.md
+  - Git:
+    - Git/Git简易教程.md
+  - 无题:
+    - 无题/河南游.md
+    - 无题/烟台出差.md
+    - 无题/马太效应.md
+    - 无题/踏板效应.md
