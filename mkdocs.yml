@@ -161,6 +161,7 @@ nav:
     - 类型:
       - browser-support.md
       - 7种类型: browser-support.md
+    - javascript/手写轮子函数.md
     - Creating your site: creating-your-site.md
     - Publishing your site: publishing-your-site.md
     - Customization: customization.md
@@ -236,4 +237,4 @@ nav:
       - blog/posts/the-past-present-and-future.md
       - blog/posts/excluding-content-from-search.md
       - blog/posts/search-better-faster-smaller.md
-  - a: https://asd.com
+  - wanado函数库: https://www.npmjs.com/package/wanado
