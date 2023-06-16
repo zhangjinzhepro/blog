@@ -4,12 +4,12 @@ const sidebar = {
       text: "数据类型",
       items:[
         {
-          text: "7种类型判断方法",
-          link: '/javascript/数据类型/7种类型判断方法'
-        },
-        {
           text: "原始类型和引用类型",
           link: '/javascript/数据类型/原始类型和引用类型'
+        },
+        {
+          text: "7种类型判断方法",
+          link: '/javascript/数据类型/7种类型判断方法'
         },
       ]
     },
@@ -167,6 +167,68 @@ const sidebar = {
       text: "手写轮子函数",
       link: '/javascript/手写轮子函数'
     }
+  ],
+  '/工程化': [
+    {
+      text: "前端自动化",
+      link: '/工程化/前端自动化.md'
+    },
+    {
+      text: "docker+jenkins实现自动化部署",
+      link: '/工程化/docker+jenkins实现自动化部署.md'
+    },
+    {
+      text: "深入学习 webpack5",
+      link: '/工程化/深入学习 webpack5.md'
+    }
+  ],
+  '/Vue': [
+    {
+      text: "vuex+组件封装loading",
+      link: '/Vue/vuex+组件封装loading.md'
+    },
+    {
+      text: "Vue、extend、component、mixins、extends浅析",
+      link: '/Vue/Vue、extend、component、mixins、extends浅析.md'
+    },
+  ],
+  '/HTML': [
+    {
+      text: "HTML5和HTML4的区别",
+      link: '/HTML/HTML5和HTML4的区别'
+    },
+    {
+      text: "html新增结构元素解析",
+      link: '/HTML/html新增结构元素解析'
+    },
+    {
+      text: "HTML无障碍",
+      link: '/HTML/HTML无障碍'
+    },
+    {
+      text: "HTML标签",
+      link: '/HTML/HTML标签'
+    },
+  ],
+  '/CSS': [
+    {
+      text: "CSS中少用到的属性",
+      link: '/CSS/CSS中少用到的属性'
+    },
+    {
+      text: "设计中的颜色",
+      link: '/CSS/设计中的颜色'
+    },
+  ],
+  'HTTP': [
+    {
+      text: "HTTP和HTTPS",
+      link: '/HTTP/HTTP和HTTPS'
+    },
+    {
+      text: "互联网协议",
+      link: '/HTTP/互联网协议'
+    },
   ]
 }
 

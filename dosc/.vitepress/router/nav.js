@@ -1,23 +1,31 @@
 const nav = [
   {
-    text: "javascript",
-    link: '/javascript/数据类型/原始类型和引用类型.md'
-  },
-  {
-    text: "工程化",
+    text: "前端",
     items: [
       {
-        text: "前端自动化",
+        text: 'javascript',
+        link: '/javascript/数据类型/原始类型和引用类型.md'
+      },
+      {
+        text: "工程化",
         link: '/工程化/前端自动化.md'
       },
       {
-        text: "docker+jenkins实现自动化部署",
-        link: '/工程化/docker+jenkins实现自动化部署.md'
+        text: "Vue",
+        link: '/Vue/vuex+组件封装loading.md'
       },
       {
-        text: "深入学习 webpack5",
-        link: '/工程化/深入学习 webpack5.md'
-      }
+        text: "HTML",
+        link: '/HTML/HTML5和HTML4的区别'
+      },
+      {
+        text: "CSS",
+        link: '/CSS/CSS中少用到的属性'
+      },
+      {
+        text: "HTTP",
+        link: '/HTTP/HTTP和HTTPS'
+      },
     ]
   },
   {
@@ -46,19 +54,6 @@ const nav = [
     ]
   },
   {
-    text: "HTTP",
-    items: [
-      {
-        text: "HTTP和HTTPS",
-        link: '/HTTP/HTTP和HTTPS'
-      },
-      {
-        text: "互联网协议",
-        link: '/HTTP/互联网协议'
-      },
-    ]
-  },
-  {
     text: "Git",
     items: [
       {
@@ -71,55 +66,6 @@ const nav = [
       },
     ]
   },
-  {
-    text: "Vue",
-    items: [
-      {
-        text: "vuex+组件封装loading",
-        link: '/Vue/vuex+组件封装loading.md'
-      },
-      {
-        text: "Vue、extend、component、mixins、extends浅析",
-        link: '/Vue/Vue、extend、component、mixins、extends浅析.md'
-      },
-    ]
-  },
-  {
-    text: "HTML",
-    items: [
-      {
-        text: "HTML5和HTML4的区别",
-        link: '/HTML/HTML5和HTML4的区别'
-      },
-      {
-        text: "html新增结构元素解析",
-        link: '/HTML/html新增结构元素解析'
-      },
-      {
-        text: "HTML无障碍",
-        link: '/HTML/HTML无障碍'
-      },
-      {
-        text: "HTML标签",
-        link: '/HTML/HTML标签'
-      },
-    ]
-  },
-
-  {
-    text: "CSS",
-    items: [
-      {
-        text: "CSS中少用到的属性",
-        link: '/CSS/CSS中少用到的属性'
-      },
-      {
-        text: "设计中的颜色",
-        link: '/CSS/设计中的颜色'
-      },
-    ]
-  },
-
   {
     text: "项目管理",
     items: [
@@ -154,7 +100,10 @@ const nav = [
       },
     ]
   },
-
+  {
+    text: "wanado",
+    link: 'https://www.npmjs.com/package/wanado',
+  },
 
 ]
 
