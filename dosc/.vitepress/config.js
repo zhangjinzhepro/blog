@@ -1,4 +1,7 @@
 import { defineConfig } from 'vitepress'
+import routers from "./router";
+import side from "./router/side";
+import router from "./router";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,23 +13,11 @@ export default defineConfig({
       dark: '/images/logo_.png',
     },
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    nav: routers.nav,
+    sidebar: router.sidebar,
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/yunshenpro' }
     ]
   }
 })
