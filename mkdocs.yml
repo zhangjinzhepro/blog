@@ -160,8 +160,23 @@ nav:
   - JavaScript:
     - 数据类型:
       - javascript/数据类型/原始类型和引用类型.md
-      - 7种类型: browser-support.md
+      - javascript/数据类型/7种类型判断方法.md
+    - 函数:
+      - javascript/函数/JavaScript中的函数.md
+      - javascript/函数/变量作用域与解构赋值.md
+    - 对象:
+      - javascript/对象/JavaScript中的对象.md
+      - javascript/对象/js原型与原型链与原型继承.md
+    - 语句:
+      - javascript/语句/表达式.md
+      - javascript/语句/语句的执行.md
+    - 运算符:
+      - javascript/运算符/逻辑运算符.md
+    - 优化:
+      - javascript/优化/编写高质量JavaScript代码.md
+    - javascript/关于函数式编程.md
     - javascript/手写轮子函数.md
+    - javascript/封装axios.md
     - Creating your site: creating-your-site.md
     - Publishing your site: publishing-your-site.md
     - Customization: customization.md
