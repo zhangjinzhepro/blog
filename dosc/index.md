@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "云深"
   text: 
-  tagline: 路漫漫其修远兮，我将上下而求索。
+  tagline: 路漫漫其修远兮，吾将上下而求索。
 #  actions:
 #    - theme: brand
 #      text: Markdown Examples
