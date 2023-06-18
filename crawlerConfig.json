@@ -1,6 +1,6 @@
 {
   "index_name": "yunshen",
-  "start_urls": ["https://yunshenpro.github.io/"],
+  "start_urls": ["https://zhangjinzhe.cn"],
   "rateLimit": 8,
   "maxDepth": 10,
   "selectors": {
