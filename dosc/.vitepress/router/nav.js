@@ -67,6 +67,10 @@ const nav = [
     ]
   },
   {
+    text: "MD",
+    link: '/md/md简易语法'
+  },
+  {
     text: "项目管理",
     items: [
       {
