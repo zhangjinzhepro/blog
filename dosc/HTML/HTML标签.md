@@ -1,8 +1,4 @@
----
-layout: post
-title: HTML标签
-tags: [html]
----
+# HTML标签
 
 ## 语义化标签
 

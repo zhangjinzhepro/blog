@@ -1,8 +1,5 @@
----
-layout: post
-title: 编写高质量JavaScript代码
-tags: [javascript]
----
+# 编写高质量JavaScript代码
+
 本文知识点是摘自于[汤姆大叔博客](http://www.cnblogs.com/TomXu/)，自己记录理解并学习
 
 ## 书写可维护的代码

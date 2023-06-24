@@ -1,9 +1,5 @@
----
-layout: post
-title: vuex+组件封装loading
-tags: [javascript, vue]
----
-[[2020-02-15-vuex+组件封装loading]]
+# vuex+组件封装loading
+
 ## Loading组件封装
 
 > loading.vue

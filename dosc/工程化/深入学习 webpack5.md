@@ -1,8 +1,5 @@
----
-layout: post
-title: 深入学习 webpack5
-tags: [工程化]
----
+# 深入学习 webpack5
+
 ## webpack 和 webpack-cli 的关系
 
 cli 不是必须的，他只是处理 webpack 命令及参数，现在框架基本都是用自己的 cli。([v1.2.7](https://github.com/izhangjinzhe/learning-webpack5/tree/v1.2.7))

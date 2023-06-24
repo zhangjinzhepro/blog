@@ -1,8 +1,4 @@
----
-layout: post
-title: JavaScript中的对象
-tags: [javascript]
----
+# JavaScript中的对象
 
 ## 基于对象
 

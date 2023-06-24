@@ -1,8 +1,5 @@
----
-layout: post
-title: Vue、extend、component、mixins、extends浅析
-tags: [vue]
----
+# Vue、extend、component、mixins、extends浅析
+
 ## Vue
 
 通过 `new Vue` 创建一个根Vue实例，同一个Vue应用里可以创建多个。

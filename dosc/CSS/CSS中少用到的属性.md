@@ -1,8 +1,4 @@
----
-layout: post
-title: CSS中少用到的属性
-tags: [css]
----
+# CSS中少用到的属性
 
 ## aspect-ratio
 

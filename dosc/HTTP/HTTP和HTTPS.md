@@ -1,8 +1,5 @@
----
-layout: post
-title: HTTP和HTTPS
-tags: [http]
----
+# HTTP和HTTPS
+
 ## HTTP
 
 ### get和post区别

@@ -1,8 +1,4 @@
----
-layout: post
-title: JavaScript中的函数
-tags: [javascript]
----
+# JavaScript中的函数
 
 ## 一等公民
 

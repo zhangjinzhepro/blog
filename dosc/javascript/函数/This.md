@@ -1,8 +1,5 @@
----
-layout: post
-title: This
-tags: [javascript]
----
+# This
+
 this和切换执行上下文有关，取决于函数执行时刻，调用函数时所使用的引用。
 
 ## 8种函数

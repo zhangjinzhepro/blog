@@ -1,9 +1,5 @@
----
-layout: post
-title: Git简易教程
-tags: [git]
----
-# git相关概念
+
+# git简易教程
 
 git是一种分布式的版本控制系统。
 

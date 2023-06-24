@@ -1,9 +1,3 @@
----
-layout: post
-title: HTML无障碍
-tags: [html]
----
-
 # [WAI-ARIA](https://developer.mozilla.org/zh-CN/docs/Learn/Accessibility)
 
 它是通过浏览器和一些辅助技术丰富我们的语义化的技术，是面向屏幕阅读器和其他设备使用者的技术。

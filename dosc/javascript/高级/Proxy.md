@@ -1,8 +1,4 @@
----
-layout: post
-title: Proxy
-tags: [javascript]
----
+# Proxy
 
 Proxy可以创建一个对象的代理，实现对操作的劫持。
 

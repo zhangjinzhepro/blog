@@ -1,8 +1,4 @@
----
-layout: post
-title: docker+jenkins实现自动化部署
-tags: [工程化]
----
+# docker+jenkins实现自动化部署
 
 使用docker+jenkins实现自动化部署个人网站，只记录过程和可能要注意的点。
 

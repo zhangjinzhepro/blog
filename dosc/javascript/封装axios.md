@@ -1,8 +1,5 @@
----
-layout: post
-title: 封装axios
-tags: [javascript]
----
+# 封装axios
+
 封装axios的好处：兼容多种请求方法，不需要关心是怎么调用的，只需要传入相关参数即可使用
 
 我是在webpack项目里，用的到了ES6模块化进行封装
