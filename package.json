@@ -5,6 +5,9 @@
     "docs:preview": "vitepress preview dosc"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-beta.2"
+    "@mermaid-js/mermaid-mindmap": "^9.3.0",
+    "mermaid": "^8.14.0",
+    "vitepress": "^1.0.0-beta.2",
+    "vitepress-plugin-mermaid": "^2.0.10"
   }
 }

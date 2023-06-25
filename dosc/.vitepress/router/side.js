@@ -220,7 +220,7 @@ const sidebar = {
       link: '/CSS/设计中的颜色'
     },
   ],
-  'HTTP': [
+  '/HTTP': [
     {
       text: "HTTP和HTTPS",
       link: '/HTTP/HTTP和HTTPS'
@@ -229,6 +229,12 @@ const sidebar = {
       text: "互联网协议",
       link: '/HTTP/互联网协议'
     },
+  ],
+  '/读书': [
+    {
+      text: "南京大屠杀",
+      link: '/读书/南京大屠杀'
+    }
   ]
 }
 

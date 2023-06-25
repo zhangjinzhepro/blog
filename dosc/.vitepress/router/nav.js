@@ -105,6 +105,10 @@ const nav = [
     ]
   },
   {
+    text: "读书",
+    link: '/读书/南京大屠杀'
+  },
+  {
     text: "wanado",
     link: 'https://www.npmjs.com/package/wanado',
   },
