@@ -1,5 +1,5 @@
 {
-  "index_name": "yunshen",
+  "index_name": "zhangjinzhe.cn",
   "start_urls": ["https://zhangjinzhe.cn"],
   "rateLimit": 8,
   "maxDepth": 10,

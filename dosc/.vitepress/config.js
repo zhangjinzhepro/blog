@@ -8,7 +8,7 @@ export default withMermaid(
   {
     lang: 'zh-CN',
     outDir: "../dist",
-    title: "张晋哲的博客",
+    title: "张晋哲",
     description: "",
     lastUpdated: true,
     returnToTopLabel: true,
