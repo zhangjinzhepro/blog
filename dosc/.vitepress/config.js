@@ -8,7 +8,7 @@ export default withMermaid(
   {
     lang: 'zh-CN',
     outDir: "../dist",
-    title: "云深的博客",
+    title: "张晋哲的博客",
     description: "",
     lastUpdated: true,
     returnToTopLabel: true,
@@ -20,20 +20,17 @@ export default withMermaid(
       algolia: {
         appId: 'PDEGHFPKIN',
         apiKey: '6f186bf493b18009f5fd2b63a468d0e1',
-        indexName: 'yunshen'
+        indexName: 'zhangjinzhe.cn'
       },
       head: [
         [
           'link',{ rel: 'icon', href: '/images/logo.png' }
         ]
       ],
-      logo: {
-        light: '/images/logo.png',
-        dark: '/images/logo_.png',
-      },
+      logo:  '/images/logo.png',
       footer: {
         message: '鲁ICP备2022007356号-1',
-        copyright: 'Copyright © 2020 - present 云深</a>'
+        copyright: 'Copyright © 2020 - present 张晋哲</a>'
       },
       nav: routers.nav,
       sidebar: routers.sidebar,
