@@ -6,13 +6,10 @@ hero:
   name: 张晋哲的博客
   text: 一个前端工程师的后花园
   tagline: 工作和生活分离是最好的状态
-#  actions:
-#    - theme: brand
-#      text: Markdown Examples
-#      link: /markdown-examples
-#    - theme: alt
-#      text: API Examples
-#      link: /api-examples
+  actions:
+    - theme: brand
+      text: 门户导航
+      link: /docs/portal/index
 
 features:
   - icon: 🗺
