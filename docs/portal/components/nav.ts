@@ -10,8 +10,8 @@ interface NavLink {
   link: string
 }
 type NavData = {
-  title: string
   items: NavLink[]
+  title: string
 }
 
 
@@ -60,6 +60,24 @@ export const NAV_DATA: NavData[] = [
         desc: '深入 JavaScript 某些特性。',
         icon: 'http://shamansir.github.io/JavaScript-Garden/favicon.ico?v=2\n',
         link: 'http://shamansir.github.io/JavaScript-Garden/zh/'
+      },
+      {
+        title: 'JavaScript开发者应懂的33个概念\n',
+        desc: '为了帮助开发者掌握 JavaScript 概念而创立的。',
+        icon: 'https://raw.githubusercontent.com/stephentian/33-js-concepts/master/33_js_concepts.jpg',
+        link: 'https://github.com/stephentian/33-js-concepts/blob/master/README.md'
+      },
+      {
+        title: '函数式编程',
+        desc: '为了帮助开发者掌握 JavaScript 概念而创立的。',
+        icon: '函',
+        link: 'https://llh911001.gitbook.io/mostly-adequate-guide-chinese/'
+      },
+      {
+        title: 'TypeScript',
+        desc: 'JavaScript 的超集。',
+        icon: 'https://www.tslang.cn/assets/images/icons/favicon.ico\n',
+        link: 'https://www.tslang.cn/'
       }
     ]
   },
@@ -98,27 +116,15 @@ export const NAV_DATA: NavData[] = [
       },
       {
         title: 'UmiJS\n',
-        desc: ' 插件化的企业级前端应用框架。',
+        desc: '插件化的企业级前端应用框架。',
         icon: 'https://img.alicdn.com/tfs/TB1YHEpwUT1gK0jSZFhXXaAtVXa-28-27.svg',
         link: 'https://v3.umijs.org/zh-CN'
       },
       {
-        title: 'Ant Design',
-        desc: '助力设计开发者「更灵活」地搭建出「更美」的产品，让用户「快乐工作」~',
-        icon: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg\n',
-        link: 'https://ant.design/index-cn'
-      },
-      {
-        title: 'Ant Design Pro',
-        desc: '开箱即用的中台前端/设计解决方案',
-        icon: 'https://pro.ant.design/favicon.png\n',
-        link: 'https://pro.ant.design/zh-CN'
-      },
-      {
-        title: 'Ant Design Mobile',
-        desc: '探索移动端 Web 的体验极限',
-        icon: 'https://gw.alipayobjects.com/zos/bmw-prod/b874caa9-4458-412a-9ac6-a61486180a62.svg',
-        link: 'https://mobile.ant.design/zh/'
+        title: 'Next.js',
+        desc: '这是一个用于生产环境的 React 框架。',
+        icon: 'https://www.nextjs.cn/static/favicon/favicon.ico\n',
+        link: 'https://www.nextjs.cn/'
       },
       {
         title: '飞冰 (ICE)',
@@ -156,6 +162,12 @@ export const NAV_DATA: NavData[] = [
         link: 'https://pinia.web3doc.top/'
       },
       {
+        title: 'Nuxt',
+        desc: '易懂的Web框架',
+        icon: 'https://nuxt.com.cn/icon.png\n',
+        link: 'https://nuxt.com.cn/'
+      },
+      {
         title: 'create-vue',
         desc: '启动Vue项目的推荐方法。',
         icon: 'https://cn.vuejs.org/logo.svg\n',
@@ -166,6 +178,106 @@ export const NAV_DATA: NavData[] = [
         desc: 'Vue.js 开发的标准工具（现已处于维护模式!）',
         icon: 'https://cli.vuejs.org/favicon.png',
         link: 'https://cli.vuejs.org/zh/'
+      },
+
+    ]
+  },
+  {
+    title: 'Node',
+    items: [
+      {
+        title: 'Nodejs官方文档',
+        desc: 'Node.js 是一个开源的、跨平台的 JavaScript 运行时环境。',
+        icon: 'https://img.nodejs.cn/favicon.png\n',
+        link: 'https://nodejs.cn/'
+      },
+      {
+        title: 'Egg',
+        desc: '为企业级框架和应用而生。',
+        icon: 'https://www.eggjs.org/favicon.png\n',
+        link: 'https://www.eggjs.org/zh-CN'
+      },
+      {
+        title: 'Express',
+        desc: '基于 Node.js 平台，快速、开放、极简的 Web 开发框架。',
+        icon: 'https://express.nodejs.cn/images/favicon.png\n',
+        link: 'https://express.nodejs.cn/'
+      },
+      {
+        title: 'Koa',
+        desc: 'Koa -- 基于 Node.js 平台的下一代 web 开发框架。',
+        icon: 'https://koa.bootcss.com/public/images/koa-logo.png\n',
+        link: 'https://koa.bootcss.com/'
+      },
+      {
+        title: 'Nest',
+        desc: '用于构建高效且可伸缩的服务端应用程序的渐进式 Node.js 框架。',
+        icon: 'https://docs.nestjs.cn/favicon.ico\n',
+        link: 'https://docs.nestjs.cn/'
+      },
+    ]
+  },
+  {
+    title: '小程序',
+    items: [
+      {
+        title: '微信小程序官网文档',
+        desc: '微信小程序官网文档',
+        icon: 'https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico\n',
+        link: 'https://developers.weixin.qq.com/miniprogram/dev/framework/'
+      },
+      {
+        title: 'uni-app',
+        desc: '编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/飞书/QQ/快手/钉钉/淘宝）、快应用等多个平台。',
+        icon: 'https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/icon.png?v=1556263038788\n',
+        link: 'https://uniapp.dcloud.net.cn/'
+      },
+      {
+        title: 'WePY',
+        desc: '让小程序支持组件化开发的框架',
+        icon: 'https://wepyjs.github.io/wepy-docs/static/img/wepylogo.png',
+        link: 'https://wepyjs.github.io/wepy-docs/'
+      },
+      {
+        title: 'Taro',
+        desc: '多端统一开发解决方案',
+        icon: 'https://taro.js.org/static/images/taro.png\n',
+        link: 'https://taro.js.org/'
+      },
+      {
+        title: 'WeUI',
+        desc: '为微信小程序量身定制。',
+        icon: 'https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico\n',
+        link: 'https://github.com/weui/weui-design'
+      },
+    ]
+  },
+  {
+    title: 'UI库',
+    items: [
+      {
+        title: 'Ant Design',
+        desc: '助力设计开发者「更灵活」地搭建出「更美」的产品，让用户「快乐工作」~',
+        icon: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg\n',
+        link: 'https://ant.design/index-cn'
+      },
+      {
+        title: 'Ant Design Pro',
+        desc: '开箱即用的中台前端/设计解决方案',
+        icon: 'https://pro.ant.design/favicon.png\n',
+        link: 'https://pro.ant.design/zh-CN'
+      },
+      {
+        title: 'Ant Design Mobile',
+        desc: '探索移动端 Web 的体验极限',
+        icon: 'https://gw.alipayobjects.com/zos/bmw-prod/b874caa9-4458-412a-9ac6-a61486180a62.svg',
+        link: 'https://mobile.ant.design/zh/'
+      },
+      {
+        title: 'Material UI',
+        desc: '直观的React UI工具。',
+        icon: 'https://mui.com/static/favicon.ico\n',
+        link: 'https://mui.com/'
       },
       {
         title: 'Element Plus',
@@ -178,6 +290,12 @@ export const NAV_DATA: NavData[] = [
         desc: '为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库',
         icon: 'https://element.eleme.io/favicon.ico\n',
         link: 'https://element.eleme.io/#/zh-CN'
+      },
+      {
+        title: 'View Design',
+        desc: '基于 Vue.js 3 的企业级 UI 组件库和中后台系统解决方案，为数万开发者服务。',
+        icon: 'https://file.iviewui.com/view-design-dist/img/icon-view-design.2c31e959.svg\n',
+        link: 'https://www.iviewui.com/'
       },
       {
         title: 'Ant Design of Vue',
@@ -209,17 +327,59 @@ export const NAV_DATA: NavData[] = [
         icon: 'https://img14.360buyimg.com/imagetools/jfs/t1/167902/2/8762/791358/603742d7E9b4275e3/e09d8f9a8bf4c0ef.png\n',
         link: 'https://nutui.jd.com/#/'
       },
+      {
+        title: 'Bootstrap',
+        desc: '简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。',
+        icon: 'https://www.bootcss.com/assets/favicons/favicon.ico\n',
+        link: 'https://www.bootcss.com/'
+      },
+      {
+        title: 'PaperCSS',
+        desc: '手绘风格的css框架。',
+        icon: 'https://www.getpapercss.com/favicon.ico\n',
+        link: 'https://www.getpapercss.com/'
+      },
     ]
   },
   {
-    title: 'Node',
+    title: '编译&构建&打包',
     items: [
       {
-        title: 'Nodejs文档',
-        desc: 'Node.js 是一个开源的、跨平台的 JavaScript 运行时环境。',
-        icon: 'https://img.nodejs.cn/favicon.png\n',
-        link: 'https://nodejs.cn/'
+        title: 'Webpack',
+        desc: '用于现代 JavaScript 应用程序的静态模块打包工具',
+        icon: 'https://www.webpackjs.com/favicon.f326220248556af65f41.ico\n',
+        link: 'https://www.webpackjs.com/'
+      },
+      {
+        title: 'Vite',
+        desc: '下一代的前端工具链，为开发提供极速响应',
+        icon: 'https://cn.vitejs.dev/logo.svg\n',
+        link: 'https://cn.vitejs.dev/'
+      },
+      {
+        title: 'Rollup',
+        desc: 'JavaScript 打包器，将点滴代码编织成错综复杂的程序。',
+        icon: 'https://cn.rollupjs.org/rollup-logo.svg\n',
+        link: 'https://cn.rollupjs.org/'
+      },
+      {
+        title: 'Gulp',
+        desc: '用自动化构建工具增强你的工作流程！',
+        icon: 'https://www.gulpjs.com.cn/img/favicon.png\n',
+        link: 'https://www.gulpjs.com.cn/'
+      },
+      {
+        title: 'Grunt',
+        desc: 'JavaScript 世界的构建工具',
+        icon: 'https://www.gruntjs.cn/img/favicons/favicon.ico\n',
+        link: 'https://www.gruntjs.cn/'
+      },
+      {
+        title: 'Babel',
+        desc: 'Babel 是一个 JavaScript 编译器。',
+        icon: 'https://www.babeljs.cn/img/favicon.png\n',
+        link: 'https://www.babeljs.cn/'
       },
     ]
-  }
+  },
 ]

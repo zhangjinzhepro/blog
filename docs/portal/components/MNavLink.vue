@@ -20,9 +20,13 @@ const svg = computed(() => {
   <a v-if="link" class="m-nav-link" :href="link" target="_blank" rel="noreferrer">
     <article class="box">
       <div class="box-header">
-        <div v-if="svg" class="icon" v-html="svg"></div>
-        <div v-else-if="icon && typeof icon === 'string'" class="icon">
+<!--        <div v-if="svg" class="icon" v-html="svg"></div>-->
+        <div v-if="icon.includes('http')" class="icon">
           <img :src="icon" :alt="title" onerror="this.parentElement.style.display='none'" />
+        </div>
+        <div v-else class="icon">
+          {{icon}}
+<!--          <img :src="icon" :alt="title" onerror="this.parentElement.style.display='none'" />-->
         </div>
         <h5 v-if="title" class="title">{{ title }}</h5>
       </div>
@@ -78,7 +82,7 @@ const svg = computed(() => {
 
   .title {
     overflow: hidden;
-    flex-grow: 1;
+    flex: 1;
     white-space: nowrap;
     text-overflow: ellipsis;
     line-height: 48px;
