@@ -540,24 +540,70 @@ export const NAV_DATA: NavData[] = [
         icon: 'https://caniuse.com/img/favicon-128.png\n',
         link: 'https://caniuse.com/'
       },
+    ]
+  },
+  {
+    title: 'AI 工具',
+    items: [
       {
-        title: 'JavaScript开发者应懂的33个概念\n',
-        desc: '为了帮助开发者掌握 JavaScript 概念而创立的。',
-        icon: 'https://raw.githubusercontent.com/stephentian/33-js-concepts/master/33_js_concepts.jpg',
-        link: 'https://github.com/stephentian/33-js-concepts/blob/master/README.md'
+        title: 'ChatGPT',
+        desc: '世界上最成熟、最强大的对话交互AI模型',
+        icon: 'https://openaiapi-site.azureedge.net/public-assets/d/3243891e2f/favicon.svg\n',
+        link: 'https://chat.openai.com/'
       },
       {
-        title: '函数式编程',
-        desc: '为了帮助开发者掌握 JavaScript 概念而创立的。',
-        icon: '函',
-        link: 'https://llh911001.gitbook.io/mostly-adequate-guide-chinese/'
+        title: 'ChatGPT（国内替代版）',
+        desc: 'ChatGPT Demo建立在ChatGPT-4的结构基础之上',
+        icon: 'https://chat.chatgptdemo.net/assets/image/chatgpt.svg',
+        link: 'https://chat.chatgptdemo.net/'
       },
       {
-        title: 'TypeScript',
-        desc: 'JavaScript 的超集。',
-        icon: 'https://www.tslang.cn/assets/images/icons/favicon.ico\n',
-        link: 'https://www.tslang.cn/'
-      }
+        title: 'chat-pdf',
+        desc: '上传一个PDF文件，并询问有关它的任何问题。',
+        icon: 'https://damngood.tools/favicon.ico\n',
+        link: 'https://damngood.tools/tools/chat-pdf'
+      },
+      {
+        title: 'AmyMind',
+        desc: '打开即用，思维导图的基本素养',
+        icon: 'https://amymind.com/logo192.png\n',
+        link: 'https://amymind.com/'
+      },
+      {
+        title: '写作猫',
+        desc: '集AI写作、多人协作、文本校对、改写润色、自动配图等功能为一体',
+        icon: 'https://uranus-static.oss-accelerate.aliyuncs.com/xiezuocat/favicon.ico\n',
+        link: 'https://xiezuocat.com/'
+      },
+    ]
+  },
+  {
+    title: '可视化',
+    items: [
+      {
+        title: 'ECharts',
+        desc: '一个基于 JavaScript 的开源可视化图表库\n',
+        icon: 'https://echarts.apache.org/zh/images/favicon.png?_v_=20200710_1\n',
+        link: 'https://echarts.apache.org/zh/index.html'
+      },
+      {
+        title: 'Three.js',
+        desc: 'Web3D可视化',
+        icon: 'Th',
+        link: 'https://threejs.org/'
+      },
+      {
+        title: 'AntV',
+        desc: '蚂蚁集团全新一代数据可视化解决方案。',
+        icon: 'https://gw.alipayobjects.com/zos/antfincdn/FLrTNDvlna/antv.png\n',
+        link: 'https://antv.vision/'
+      },
+      {
+        title: 'DataV',
+        desc: 'Vue 大屏数据展示组件库。',
+        icon: 'http://datav.jiaminghi.com/favicon.ico\n',
+        link: 'http://datav.jiaminghi.com/'
+      },
     ]
   },
 ]
