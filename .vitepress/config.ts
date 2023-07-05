@@ -8,7 +8,6 @@ export default defineConfig(
         outDir: "./dist",
         title: "张晋哲",
         description: "",
-        lastUpdated: true,
         markdown: {
             lineNumbers: true
         },
@@ -39,7 +38,6 @@ export default defineConfig(
                 level: 'deep',
                 label: '本页目录'
             },
-            lastUpdatedText: '上次更新',
             socialLinks: [
                 { icon: 'github', link: 'https://github.com/zhangjinzhepro' }
             ]
