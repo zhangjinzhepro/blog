@@ -20,7 +20,6 @@ const svg = computed(() => {
   <a v-if="link" class="m-nav-link" :href="link" target="_blank" rel="noreferrer">
     <article class="box">
       <div class="box-header">
-<!--        <div v-if="svg" class="icon" v-html="svg"></div>-->
         <div v-if="icon.includes('http')" class="icon">
           <img :src="icon" :alt="title" onerror="this.parentElement.style.display='none'" />
         </div>
@@ -45,6 +44,8 @@ const svg = computed(() => {
   transition: all 0.3s;
   &:hover {
     background-color: var(--vp-c-bg-soft);
+    border-color: var(--vp-c-brand);
+    text-decoration: none !important;
   }
 
   .box {
