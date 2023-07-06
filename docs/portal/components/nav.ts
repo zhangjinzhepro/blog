@@ -534,47 +534,6 @@ export const NAV_DATA: NavData[] = [
         icon: 'https://autoprefixer.github.io/assets/icon/favicon.ico\n',
         link: 'https://autoprefixer.github.io/'
       },
-      {
-        title: 'Can I use',
-        desc: '查询浏览器支持的现代web技术',
-        icon: 'https://caniuse.com/img/favicon-128.png\n',
-        link: 'https://caniuse.com/'
-      },
-    ]
-  },
-  {
-    title: 'AI 工具',
-    items: [
-      {
-        title: 'ChatGPT',
-        desc: '世界上最成熟、最强大的对话交互AI模型',
-        icon: 'https://openaiapi-site.azureedge.net/public-assets/d/3243891e2f/favicon.svg\n',
-        link: 'https://chat.openai.com/'
-      },
-      {
-        title: 'ChatGPT（国内替代版）',
-        desc: 'ChatGPT Demo建立在ChatGPT-4的结构基础之上',
-        icon: 'https://chat.chatgptdemo.net/assets/image/chatgpt.svg',
-        link: 'https://chat.chatgptdemo.net/'
-      },
-      {
-        title: 'chat-pdf',
-        desc: '上传一个PDF文件，并询问有关它的任何问题。',
-        icon: 'https://damngood.tools/favicon.ico\n',
-        link: 'https://damngood.tools/tools/chat-pdf'
-      },
-      {
-        title: 'AmyMind',
-        desc: '打开即用，思维导图的基本素养',
-        icon: 'https://amymind.com/logo192.png\n',
-        link: 'https://amymind.com/'
-      },
-      {
-        title: '写作猫',
-        desc: '集AI写作、多人协作、文本校对、改写润色、自动配图等功能为一体',
-        icon: 'https://uranus-static.oss-accelerate.aliyuncs.com/xiezuocat/favicon.ico\n',
-        link: 'https://xiezuocat.com/'
-      },
     ]
   },
   {
@@ -603,6 +562,116 @@ export const NAV_DATA: NavData[] = [
         desc: 'Vue 大屏数据展示组件库。',
         icon: 'http://datav.jiaminghi.com/favicon.ico\n',
         link: 'http://datav.jiaminghi.com/'
+      },
+    ]
+  },
+  {
+    title: 'AI 工具',
+    items: [
+      {
+        title: 'ChatGPT',
+        desc: '世界上最成熟、最强大的对话交互AI模型',
+        icon: 'https://openaiapi-site.azureedge.net/public-assets/d/3243891e2f/favicon.svg\n',
+        link: 'https://chat.openai.com/'
+      },
+      {
+        title: 'ChatGPT（国内平替）',
+        desc: 'ChatGPT Demo建立在ChatGPT-4的结构基础之上',
+        icon: 'https://chat.chatgptdemo.net/assets/image/chatgpt.svg',
+        link: 'https://chat.chatgptdemo.net/'
+      },
+      {
+        title: 'chat-pdf',
+        desc: '上传一个PDF文件，并询问有关它的任何问题。',
+        icon: 'https://damngood.tools/favicon.ico\n',
+        link: 'https://damngood.tools/tools/chat-pdf'
+      },
+      {
+        title: 'AmyMind',
+        desc: '打开即用，思维导图的基本素养',
+        icon: 'https://amymind.com/logo192.png\n',
+        link: 'https://amymind.com/'
+      },
+      {
+        title: '写作猫',
+        desc: '集AI写作、多人协作、文本校对、改写润色、自动配图等功能为一体',
+        icon: 'https://uranus-static.oss-accelerate.aliyuncs.com/xiezuocat/favicon.ico\n',
+        link: 'https://xiezuocat.com/'
+      },
+    ]
+  },
+  {
+    title: '文字&图标',
+    items: [
+      {
+        title: 'iconFont',
+        desc: '阿里妈妈MUX倾力打造的矢量图标管理、交流平台。',
+        icon: 'https://img.alicdn.com/imgextra/i4/O1CN01Z5paLz1O0zuCC7osS_!!6000000001644-55-tps-83-82.svg\n',
+        link: 'https://www.iconfont.cn/'
+      },
+      {
+        title: 'Bootstrap 官方图标库\n',
+        desc: '包含 1800 多个图标的免费、高质量的开源图标库',
+        icon: 'https://icons.bootcss.com/assets/img/favicons/favicon.ico\n',
+        link: 'https://icons.bootcss.com/'
+      },
+      {
+        title: 'Font Awesome',
+        desc: '网络字体工具包',
+        icon: 'https://fontawesome.com.cn/favicon.ico\n',
+        link: 'https://fontawesome.com.cn/'
+      },
+      {
+        title: 'EMOJI中文网',
+        desc: 'EMOJI中文网\n',
+        icon: 'https://www.emojiall.com/favicon.ico\n',
+        link: 'https://www.emojiall.com/zh-hans'
+      },
+    ]
+  },
+  {
+    title: '网站测试工具',
+    items: [
+      {
+        title: 'vConsole',
+        desc: '一个轻量、可拓展、针对手机网页的前端开发者调试面板。',
+        icon: 'vC',
+        link: 'https://github.com/Tencent/vConsole/blob/dev/README_CN.md'
+      },
+      {
+        title: 'PageSpeed Insights',
+        desc: '使您的网页在所有设备上都能快速加载',
+        icon: 'https://ssl.gstatic.com/pagespeed/insights/ui/logo/favicon_48.png\n',
+        link: 'https://pagespeed.web.dev/'
+      },
+      {
+        title: 'Responsinator',
+        desc: '主流移动设备显示效果。',
+        icon: 'http://www.responsinator.com/images/favicon.ico\n',
+        link: 'http://www.responsinator.com/'
+      },
+      {
+        title: 'Can I use',
+        desc: '查询浏览器支持的现代web技术',
+        icon: 'https://caniuse.com/img/favicon-128.png\n',
+        link: 'https://caniuse.com/'
+      },
+    ]
+  },
+  {
+    title: '其它工具',
+    items: [
+      {
+        title: 'TinyPng',
+        desc: '智能WebP, PNG和JPEG压缩',
+        icon: 'https://tinypng.com/images/favicon.ico\n',
+        link: 'https://tinypng.com/'
+      },
+      {
+        title: 'SM.MS',
+        desc: '免费图床工具',
+        icon: 'https://sm.ms/favicon-32x32.png\n',
+        link: 'https://sm.ms/'
       },
     ]
   },
