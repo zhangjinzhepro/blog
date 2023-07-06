@@ -13,7 +13,7 @@ export default defineConfig(
         },
         head: [
             [
-                'link',{ rel: 'icon', href: '/images/logo.png' }
+                'link',{ rel: 'icon', href: '/images/logo.webp' }
             ]
         ],
         themeConfig: {
@@ -23,7 +23,7 @@ export default defineConfig(
                 apiKey: '6f186bf493b18009f5fd2b63a468d0e1',
                 indexName: 'zhangjinzhe.cn'
             },
-            logo:  '/images/logo.png',
+            logo:  '/images/logo.webp',
             footer: {
                 message: '鲁ICP备2022007356号-1',
                 copyright: 'Copyright © 2020 - present 张晋哲</a>'
