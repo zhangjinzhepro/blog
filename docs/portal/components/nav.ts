@@ -32,24 +32,6 @@ export const NAV_DATA: NavData[] = [
         link: 'https://reactrouter.com/en/main'
       },
       {
-        title: 'Ant Design',
-        desc: '助力设计开发者「更灵活」地搭建出「更美」的产品，让用户「快乐工作」~',
-        icon: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg\n',
-        link: 'https://ant.design/index-cn'
-      },
-      {
-        title: 'Ant Design Pro',
-        desc: '开箱即用的中台前端/设计解决方案',
-        icon: 'https://pro.ant.design/favicon.png\n',
-        link: 'https://pro.ant.design/zh-CN'
-      },
-      {
-        title: 'Ant Design Mobile',
-        desc: '探索移动端 Web 的体验极限',
-        icon: 'https://gw.alipayobjects.com/zos/bmw-prod/b874caa9-4458-412a-9ac6-a61486180a62.svg',
-        link: 'https://mobile.ant.design/zh/'
-      },
-      {
         title: 'Redux',
         desc: 'JS 应用的状态容器，提供可预测的状态管理。',
         icon: 'https://cn.redux.js.org/img/favicon/favicon.ico\n',
@@ -60,12 +42,6 @@ export const NAV_DATA: NavData[] = [
         desc: '简单，可扩展的状态管理。',
         icon: 'https://zh.mobx.js.org/img/favicon.png',
         link: 'https://zh.mobx.js.org/README.html'
-      },
-      {
-        title: 'React Native',
-        desc: '一次学习，随处书写。',
-        icon: 'https://reactnative.dev/img/favicon.ico\n',
-        link: 'https://reactnative.dev/'
       },
       {
         title: 'DvaJS',
@@ -125,30 +101,6 @@ export const NAV_DATA: NavData[] = [
         desc: '您将喜欢使用的 Vue 存储库',
         icon: 'https://pinia.web3doc.top/logo.svg\n',
         link: 'https://pinia.web3doc.top/'
-      },
-      {
-        title: 'Element Plus',
-        desc: '基于 Vue 3，面向设计师和开发者的组件库',
-        icon: 'https://element-plus.org/images/element-plus-logo-small.svg\n',
-        link: 'https://element-plus.org/zh-CN/'
-      },
-      {
-        title: 'Element',
-        desc: '为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库',
-        icon: 'https://element.eleme.io/favicon.ico\n',
-        link: 'https://element.eleme.io/#/zh-CN'
-      },
-      {
-        title: 'View Design',
-        desc: '基于 Vue.js 3 的企业级 UI 组件库和中后台系统解决方案，为数万开发者服务。',
-        icon: 'https://file.iviewui.com/view-design-dist/img/icon-view-design.2c31e959.svg\n',
-        link: 'https://www.iviewui.com/'
-      },
-      {
-        title: 'Ant Design of Vue',
-        desc: '这里是 Ant Design 的 Vue 实现，开发和服务于企业级后台产品。',
-        icon: 'https://aliyuncdn.antdv.com/favicon.ico\n',
-        link: 'https://www.antdv.com/docs/vue/introduce-cn/'
       },
       {
         title: 'Nuxt',
@@ -422,11 +374,24 @@ export const NAV_DATA: NavData[] = [
         desc: 'Query是一个快速、小巧、功能丰富的JavaScript库。',
         icon: 'https://jquery.com/jquery-wp-content/themes/jquery.com/i/favicon.ico\n',
         link: 'https://jquery.com/'
-      },{
+      },
+      {
         title: 'Zepto',
         desc: 'Zepto是一个极简JavaScript库，用于现代浏览器，具有大部分与jquery兼容的API。',
         icon: 'https://zeptojs.com/favicon.png\n',
         link: 'https://zeptojs.com/'
+      },
+      {
+        title: 'Swiper',
+        desc: 'Swiper是纯javascript打造的滑动特效插件，面向手机、平板电脑等移动终端。',
+        icon: 'https://swiper.com.cn/favicon.ico\n',
+        link: 'https://swiper.com.cn/'
+      },
+      {
+        title: 'iSlider',
+        desc: 'iSlider是一个表现出众，无任何插件依赖的手机平台javascript滑动组件。它能够处理任何元素，例如图片或者DOM元素。',
+        icon: 'http://eux.baidu.com/iSlider/thumbnails/iSlider-logo.png',
+        link: 'http://eux.baidu.com/iSlider/demo/index_chinese.html'
       },
     ]
   },
@@ -630,7 +595,7 @@ export const NAV_DATA: NavData[] = [
     ]
   },
   {
-    title: '网站测试工具',
+    title: '测试工具',
     items: [
       {
         title: 'vConsole',
