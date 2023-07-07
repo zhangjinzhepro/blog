@@ -640,4 +640,33 @@ export const NAV_DATA: NavData[] = [
       },
     ]
   },
+  {
+    title: '大牛博客',
+    items: [
+      {
+        title: '阮一峰的个人网站',
+        desc: '阮一峰的个人网站',
+        icon: 'http://www.ruanyifeng.com/blog/images/person2_s.jpg\n',
+        link: 'http://www.ruanyifeng.com/'
+      },
+      {
+        title: '张鑫旭的个人主页',
+        desc: '张鑫旭的个人主页',
+        icon: 'https://www.zhangxinxu.com/favicon.ico\n',
+        link: 'https://www.zhangxinxu.com/'
+      },
+      {
+        title: '周爱民的博客',
+        desc: '周爱民的博客',
+        icon: 'https://aimingoo.github.io/favicon.png\n',
+        link: 'https://aimingoo.github.io/'
+      },
+      {
+        title: '技术胖的博客',
+        desc: '15年开发经验，目前主做前端开发',
+        icon: 'https://blogimages.jspang.com/blogtouxiang1.jpg',
+        link: 'https://jspang.com/'
+      },
+    ]
+  },
 ]
