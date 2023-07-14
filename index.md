@@ -9,7 +9,6 @@ hero:
   actions:
     - theme: brand
       text: 门户导航
-      link: /docs/portal/index
 
 features:
   - icon: 🗺
