@@ -9,11 +9,11 @@ hero:
   actions:
     - theme: brand
       text: 门户导航
+      link: /docs/blog/portal/index
 
 features:
   - icon: 🗺
     title: 工作经历
-    link: 'http://baidu.com'
     details: 我曾任职北京某保险公司前端开发、山东青岛某科技公司前端leader，现任职山东青岛某国企前端开发。
   - icon: ⌛
     title: 我的座右铭
