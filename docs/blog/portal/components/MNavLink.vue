@@ -25,7 +25,6 @@ const svg = computed(() => {
         </div>
         <div v-else class="icon">
           {{icon}}
-<!--          <img :src="icon" :alt="title" onerror="this.parentElement.style.display='none'" />-->
         </div>
         <h5 v-if="title" class="title">{{ title }}</h5>
       </div>
