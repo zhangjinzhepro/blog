@@ -563,6 +563,12 @@ export const NAV_DATA: NavData[] = [
         icon: 'https://uranus-static.oss-accelerate.aliyuncs.com/xiezuocat/favicon.ico\n',
         link: 'https://xiezuocat.com/'
       },
+      {
+          title: 'StockAI.Trade',
+          desc: '基于ChatGPT的AI选股工具',
+          icon: 'https://stockai.trade/favicon.ico\n',
+          link: 'https://stockai.trade/'
+      },
     ]
   },
   {
