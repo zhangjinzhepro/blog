@@ -540,10 +540,10 @@ export const NAV_DATA: NavData[] = [
         link: 'https://chat.openai.com/'
       },
       {
-        title: 'ChatGPT（无需登录）',
-        desc: 'ChatGPT Demo建立在ChatGPT-4的结构基础之上',
+        title: 'ChatGPT镜像站点',
+        desc: '这儿为你准备了众多免费好用的ChatGPT镜像站点\n',
         icon: 'https://chat.chatgptdemo.net/assets/image/chatgpt.svg',
-        link: 'https://chat.chatgptdemo.net/'
+        link: 'https://github.com/xx025/carrot'
       },
       {
         title: 'chat-pdf',

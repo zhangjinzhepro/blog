@@ -1,9 +1,9 @@
 const nav = [
   {
-    text: "前端",
+    text: "前端后花园",
     items: [
       {
-        text: 'javascript',
+        text: 'Javascript',
         link: '/docs/blog/javascript/数据类型/原始类型和引用类型.md'
       },
       {
@@ -111,11 +111,6 @@ const nav = [
         link: '/docs/blog/读书/南京大屠杀'
       },
     ]
-  },
-  
-  {
-    text: "wanado",
-    link: 'https://www.npmjs.com/package/wanado',
   },
 
 ]

@@ -26,8 +26,7 @@ export default defineConfig(
       ],
       ["script",{ src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"}],
     ],
-    lastUpdated: '上次更新',
-    lastUpdatedText: '上次更新',
+    lastUpdated: true,
     themeConfig: {
       returnToTopLabel: '返回顶部',
       algolia: {
