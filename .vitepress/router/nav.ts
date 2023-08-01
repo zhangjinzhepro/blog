@@ -80,6 +80,10 @@ const nav = [
     ]
   },
   {
+    text: "Docker",
+    link: '/docs/blog/docker/index'
+  },
+  {
     text: "无题",
     items: [
       {
@@ -102,12 +106,13 @@ const nav = [
         text: "马太效应",
         link: "/docs/blog/无题/马太效应"
       },
+      {
+        text: "读书笔记",
+        link: '/docs/blog/读书/南京大屠杀'
+      },
     ]
   },
-  {
-    text: "读书",
-    link: '/docs/blog/读书/南京大屠杀'
-  },
+  
   {
     text: "wanado",
     link: 'https://www.npmjs.com/package/wanado',

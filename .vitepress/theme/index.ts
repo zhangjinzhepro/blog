@@ -4,6 +4,7 @@ import Theme from 'vitepress/theme'
 import './style.css'
 import {useData} from "vitepress";
 
+
 export default {
   ...Theme,
   Layout: () => {
@@ -18,6 +19,5 @@ export default {
       return h(Theme.Layout, props)
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
   }
 }

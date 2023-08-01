@@ -601,7 +601,42 @@ export const NAV_DATA: NavData[] = [
     ]
   },
   {
-    title: '测试工具',
+    title: '图片&视频处理',
+    items: [
+      {
+        title: 'TinyPng',
+        desc: '智能WebP, PNG和JPEG压缩',
+        icon: 'https://tinypng.com/images/favicon.ico\n',
+        link: 'https://tinypng.com/'
+      },
+      {
+        title: 'Final2x',
+        desc: '将图像超分辨率到任意大小',
+        icon: 'https://avatars.githubusercontent.com/u/65994850?s=48&v=4\n',
+        link: 'https://github.com/Tohrusky/Final2x'
+      },
+      {
+        title: 'SM.MS',
+        desc: '免费图床工具',
+        icon: 'https://sm.ms/favicon-32x32.png\n',
+        link: 'https://sm.ms/'
+      },
+      {
+        title: 'HandBrake\n',
+        desc: '转换几乎任何格式的视频',
+        icon: 'https://avatars.githubusercontent.com/u/627269?s=200&v=4\n',
+        link: 'https://github.com/HandBrake/HandBrake'
+      },
+      {
+        title: 'HiPDF',
+        desc: '一站式PDF转换解决方案',
+        icon: 'https://www.hipdf.cn/favicon.ico\n',
+        link: 'https://www.hipdf.cn/all-tools'
+      },
+    ]
+  },
+  {
+    title: '测试&优化工具',
     items: [
       {
         title: 'vConsole',
@@ -627,22 +662,11 @@ export const NAV_DATA: NavData[] = [
         icon: 'https://caniuse.com/img/favicon-128.png\n',
         link: 'https://caniuse.com/'
       },
-    ]
-  },
-  {
-    title: '其它工具',
-    items: [
       {
-        title: 'TinyPng',
-        desc: '智能WebP, PNG和JPEG压缩',
-        icon: 'https://tinypng.com/images/favicon.ico\n',
-        link: 'https://tinypng.com/'
-      },
-      {
-        title: 'SM.MS',
-        desc: '免费图床工具',
-        icon: 'https://sm.ms/favicon-32x32.png\n',
-        link: 'https://sm.ms/'
+        title: 'Optimizer',
+        desc: 'Windows平台的优化器',
+        icon: 'https://raw.githubusercontent.com/hellzerg/optimizer/master/banner.png',
+        link: 'https://github.com/hellzerg/optimizer'
       },
     ]
   },

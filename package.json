@@ -5,12 +5,11 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "@mermaid-js/mermaid-mindmap": "^9.3.0",
-    "vitepress": "^1.0.0-beta.3",
-    "vitepress-plugin-mermaid": "^2.0.10"
+    "vitepress": "^1.0.0-beta.3"
   },
   "dependencies": {
     "@mdit-vue/shared": "^0.12.0",
+    "markdown-it-custom-attrs": "^1.0.2",
     "sass": "^1.63.6"
   }
 }
