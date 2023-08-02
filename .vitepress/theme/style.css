@@ -89,3 +89,8 @@
   --docsearch-primary-color: var(--vp-c-brand) !important;
 }
 
+[data-fancybox=gallery]{
+    width: 100%;
+    border-radius: 10px;
+}
+
