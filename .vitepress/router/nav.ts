@@ -26,6 +26,7 @@ const nav = [
         text: "HTTP",
         link: '/docs/blog/HTTP/HTTP和HTTPS'
       },
+
     ]
   },
   {
@@ -54,33 +55,15 @@ const nav = [
     ]
   },
   {
-    text: "Git",
-    items: [
-      {
-        text: "Git简易教程",
-        link: '/docs/blog/Git/Git简易教程'
-      },
-      {
-        text: "版本号",
-        link: '/docs/blog/Git/版本号'
-      },
-    ]
+    text: "Git入门",
+    link: '/docs/blog/Git/Git入门',
   },
   {
-    text: "MD",
+    text: "MarkDown入门",
     link: '/docs/blog/md/md简易语法'
   },
   {
-    text: "项目管理",
-    items: [
-      {
-        text: "缺陷管理分析",
-        link: '/docs/blog/项目管理/缺陷管理分析'
-      },
-    ]
-  },
-  {
-    text: "Docker",
+    text: "Docker入门",
     link: '/docs/blog/docker/index'
   },
   {
@@ -112,7 +95,16 @@ const nav = [
       },
     ]
   },
-
 ]
 
 export default nav
+
+
+
+
+
+
+
+
+
+7
