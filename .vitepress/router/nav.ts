@@ -60,7 +60,7 @@ const nav = [
   },
   {
     text: "MarkDown入门",
-    link: '/docs/blog/md/md简易语法'
+    link: '/docs/blog/md/MarkDown入门'
   },
   {
     text: "Docker入门",
