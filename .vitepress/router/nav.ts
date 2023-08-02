@@ -67,33 +67,16 @@ const nav = [
     link: '/docs/blog/docker/docker'
   },
   {
-    text: "无题",
-    items: [
-      {
-        text: "纪念左耳朵耗子",
-        link: "/docs/blog/无题/纪念左耳朵耗子"
-      },
-      {
-        text: "河南游",
-        link: "/docs/blog/无题/河南游"
-      },
-      {
-        text: "烟台出差",
-        link: "/docs/blog/无题/烟台出差"
-      },
-      {
-        text: "踏板效应",
-        link: "/docs/blog/无题/踏板效应"
-      },
-      {
-        text: "马太效应",
-        link: "/docs/blog/无题/马太效应"
-      },
-      {
-        text: "读书笔记",
-        link: '/docs/blog/读书/南京大屠杀'
-      },
-    ]
+    text: "读书笔记",
+    link: '/docs/blog/读书/南京大屠杀'
+  },
+  {
+    text: "随想",
+    link: "/docs/blog/随想/纪念左耳朵耗子"
+  },
+  {
+    text: "一些概念",
+    link: "/docs/blog/概念/马太效应"
   },
 ]
 

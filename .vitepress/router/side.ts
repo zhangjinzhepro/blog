@@ -253,6 +253,30 @@ const sidebar = {
       text: "版本号介绍",
       link: '/docs/blog/Git/版本号介绍'
     },
+  ],
+  '/docs/blog/随想': [
+    {
+      text: "纪念左耳朵耗子",
+      link: "/docs/blog/随想/纪念左耳朵耗子"
+    },
+    {
+      text: "河南游",
+      link: "/docs/blog/随想/河南游"
+    },
+    {
+      text: "烟台出差",
+      link: "/docs/blog/随想/烟台出差"
+    },
+  ],
+  '/docs/blog/概念': [
+    {
+      text: "马太效应",
+      link: "/docs/blog/概念/马太效应"
+    },
+    {
+      text: "踏板效应",
+      link: "/docs/blog/概念/踏板效应"
+    },
   ]
 }
 
