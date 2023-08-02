@@ -246,8 +246,8 @@ const sidebar = {
       link: '/docs/blog/Git/Git入门'
     },
     {
-      text: "Git高级进阶",
-      link: '/docs/blog/Git/Git高级进阶'
+      text: "Git进阶",
+      link: '/docs/blog/Git/Git进阶'
     },
     {
       text: "版本号介绍",
