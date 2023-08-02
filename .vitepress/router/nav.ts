@@ -7,10 +7,6 @@ const nav = [
         link: '/docs/blog/javascript/数据类型/原始类型和引用类型.md'
       },
       {
-        text: "工程化",
-        link: '/docs/blog/工程化/前端自动化.md'
-      },
-      {
         text: "Vue",
         link: '/docs/blog/Vue/vuex+组件封装loading.md'
       },
@@ -26,7 +22,10 @@ const nav = [
         text: "HTTP",
         link: '/docs/blog/HTTP/HTTP和HTTPS'
       },
-
+      {
+        text: "工程化",
+        link: '/docs/blog/工程化/前端自动化.md'
+      },
     ]
   },
   {
@@ -55,16 +54,8 @@ const nav = [
     ]
   },
   {
-    text: "Git",
-    link: '/docs/blog/Git/Git入门',
-  },
-  {
-    text: "MarkDown",
-    link: '/docs/blog/md/MarkDown入门'
-  },
-  {
-    text: "Docker",
-    link: '/docs/blog/docker/docker'
+    text: "其他技术",
+    link: '/docs/blog/其他技术/Git/Git入门',
   },
   {
     text: "读书笔记",

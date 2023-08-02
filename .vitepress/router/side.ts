@@ -277,6 +277,20 @@ const sidebar = {
       text: "踏板效应",
       link: "/docs/blog/概念/踏板效应"
     },
+  ],
+  '/docs/blog/其他技术': [
+    {
+      text: "Git",
+      link: '/docs/blog/其他技术/Git/Git入门',
+    },
+    {
+      text: "Docker",
+      link: '/docs/blog/其他技术/docker/docker',
+    },
+    {
+      text: "MarkDown",
+      link: '/docs/blog/其他技术/md/MarkDown',
+    },
   ]
 }
 
