@@ -55,16 +55,16 @@ const nav = [
     ]
   },
   {
-    text: "Git入门",
+    text: "Git",
     link: '/docs/blog/Git/Git入门',
   },
   {
-    text: "MarkDown入门",
+    text: "MarkDown",
     link: '/docs/blog/md/MarkDown入门'
   },
   {
-    text: "Docker入门",
-    link: '/docs/blog/docker/index'
+    text: "Docker",
+    link: '/docs/blog/docker/docker'
   },
   {
     text: "无题",
