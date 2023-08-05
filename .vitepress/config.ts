@@ -13,7 +13,7 @@ export default defineConfig(
       }
     },
     lang: 'zh-CN',
-    outDir: "./dist",
+    // outDir: "./dist",
     title: "张晋哲",
     description: "",
     head: [
