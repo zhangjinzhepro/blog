@@ -36,7 +36,7 @@ export default defineConfig(
       },
       logo:  '/images/logo.webp',
       footer: {
-        message: '鲁ICP备2022007356号-1',
+        message: '<a href="https://beian.miit.gov.cn/" target="_blank" style="text-decoration: underline; color: #144a74">鲁ICP备2022007356号-1</a>',
         copyright: 'Copyright © 2020 - present 张晋哲</a>'
       },
       nav: routers.nav,
