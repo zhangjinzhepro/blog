@@ -28,12 +28,15 @@ export default defineConfig(
     ],
     lastUpdated: true,
     themeConfig: {
-      returnToTopLabel: '返回顶部',
-      algolia: {
-        appId: 'PDEGHFPKIN',
-        apiKey: '6f186bf493b18009f5fd2b63a468d0e1',
-        indexName: 'zhangjinzhe.cn'
+      search: {
+        provider: 'local'
       },
+      returnToTopLabel: '返回顶部',
+      // algolia: {
+      //   appId: 'PDEGHFPKIN',
+      //   apiKey: '6f186bf493b18009f5fd2b63a468d0e1',
+      //   indexName: 'zhangjinzhe.cn'
+      // },
       logo:  '/images/logo.webp',
       footer: {
         message: '<a href="https://beian.miit.gov.cn/" target="_blank" style="text-decoration: underline; color: #144a74">鲁ICP备2022007356号-1</a>',
