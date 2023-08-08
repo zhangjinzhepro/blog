@@ -26,6 +26,10 @@ const nav = [
         text: "工程化",
         link: '/docs/blog/工程化/前端自动化.md'
       },
+      {
+        text: "TypeScript",
+        link: '/docs/blog/fe/ts/ts.md'
+      },
     ]
   },
   {
