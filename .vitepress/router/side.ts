@@ -240,20 +240,6 @@ const sidebar = {
       link: '/docs/blog/读书/毛泽东传'
     }
   ],
-  '/docs/blog/Git': [
-    {
-      text: "Git入门",
-      link: '/docs/blog/Git/Git入门'
-    },
-    {
-      text: "Git进阶",
-      link: '/docs/blog/Git/Git进阶'
-    },
-    {
-      text: "版本号介绍",
-      link: '/docs/blog/Git/版本号介绍'
-    },
-  ],
   '/docs/blog/随想': [
     {
       text: "纪念左耳朵耗子",
@@ -281,7 +267,21 @@ const sidebar = {
   '/docs/blog/其他技术': [
     {
       text: "Git",
-      link: '/docs/blog/其他技术/Git/Git入门',
+      items:[
+        {
+          text: "Git入门",
+          link: '/docs/blog/其他技术/Git/Git入门',
+        },
+        {
+          text: "Git进阶",
+          link: '/docs/blog/其他技术/Git/Git进阶',
+        },
+        {
+          text: "版本号介绍",
+          link: '/docs/blog/其他技术/Git/版本号介绍',
+        }
+      ]
+      
     },
     {
       text: "Docker",
