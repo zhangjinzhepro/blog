@@ -4,17 +4,17 @@
 TS是建立在JS之上的一门语言，旨在解决JS中存在的一些问题。
 
 ## 为什么使用 TS
-  - 类型检测
-  - 代码完成
-  - 重构
-  - 新特性...
+- 类型检测
+- 代码完成
+- 重构
+- 新特性...
 
 ## TS 和 JS 有什么区别
 TS的本质使带有类型检测的JS。
 
 ## TS 的缺点
- - 需要编译
- - 对于开发人员来说需要更自律
+- 需要编译
+- 对于开发人员来说需要更自律
 
 ## 安装
 
@@ -34,7 +34,7 @@ npm i typescript
 ```shell
 tsc --init
 ```
-### 配置文件属性
+### 属性解析
 ```typescript
 {
   "compilerOptions": {
@@ -121,7 +121,7 @@ tsc --init
 
     /* Type Checking */
     "strict": true,                                      /* Enable all strict type-checking options. */
-    // "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied 'any' type. */
+    // "noImplicitAny": true,                            /* 为带有隐含'any'类型的表达式和声明启用错误报告。*/
     // "strictNullChecks": true,                         /* When type checking, take into account 'null' and 'undefined'. */
     // "strictFunctionTypes": true,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
     // "strictBindCallApply": true,                      /* Check that the arguments for 'bind', 'call', and 'apply' methods match the original function. */
@@ -147,6 +147,96 @@ tsc --init
 }
 
 ```
+
+## 类型推断
+当省略类型时，`typescript`会自动推断变量类型。 当定义一个未初始化的变量时，该变量为 `any` 类型
+
+```typescript
+let b = 2
+b = '3' // error
+
+let c;
+c = 1
+c = '2'
+c = true
+```
+
+## Any
+表示可以是任何类型，但会失去失`typescript`的类型检查功能，应避免使用它。
+
+```typescript
+let c;
+c = 1
+c = '2'
+c = true
+```
+
+## Arrays
+由类型注释表示的数组。
+
+```typescript
+let arr:number[] = [1, 2, 3]
+let arr2:string[] = ['a', 'b', 'c']
+let arr3 = [1, '2', true] // 默认为any类型
+```
+::: tip
+编辑器可以识别数组元素的方法，提高生产力。
+![](./img/arr.png)
+:::
+
+## Tuples
+元组是固定长度的数组，并且规定每个元素的类型。
+
+```typescript
+let arr:[number, string] = [1, 'a']
+```
+::: tip
+同数组一样， 编辑器可以识别数组元素的方法，提高生产力。
+:::
+
+::: warning
+虽然`Tuples`规定了数组的长度和类型，但是使用`push`方法可用并且不会报错。
+```typescript
+let arr3:[number, string] = [1, 'a']
+arr3.push(1) // 正常
+```
+:::
+
+## Enums
+定义一组命名的常量。
+
+```typescript
+const enum Size{
+    S = 1,
+    M,
+    L
+}
+
+let y:Size = Size.M // 2
+```
+::: warning
+- 如果不设置初始值，将会从`0`开始。
+```typescript
+const enum Size{
+  S, // 0
+  M, // 1
+  L // 2
+}
+
+let y:Size = Size.M // 1
+```
+- 异构枚举（字符串枚举和数字枚举混合）
+```typescript
+const enum Size{
+  S = 0,
+  M = 'M'
+}
+
+let y:Size = Size.M // M
+```
+:::
+
+
 
 
 

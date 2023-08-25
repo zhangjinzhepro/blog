@@ -28,7 +28,7 @@ const nav = [
       },
       {
         text: "TypeScript",
-        link: '/docs/blog/fe/ts/ts.md'
+        link: '/docs/blog/fe/typescript/index.md'
       },
     ]
   },
