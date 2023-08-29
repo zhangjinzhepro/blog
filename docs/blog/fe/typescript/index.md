@@ -202,7 +202,7 @@ arr3.push(1) // 正常
 ```
 :::
 
-## Enums
+## Enums（元组）
 定义一组命名的常量。
 
 ```typescript
@@ -235,6 +235,138 @@ const enum Size{
 let y:Size = Size.M // M
 ```
 :::
+
+## Functions
+规定函数形参和返回值的数据类型。
+
+```typescript
+function sum(a: number, b:number): number{
+  return 1
+}
+```
+
+::: tip
+- 忽略函数返回值默认为`any`类型
+- 检测未使用的形参：`noUnusedParameters: true`。
+- 检测未使用的变量：`noUnusedLocals: true`。
+- 隐式返回检测：`noImplicitReturns: true`。
+```typescript
+function loop(a: number){
+  if(a > 100){
+    return a * 2
+  }
+  // error
+}
+```
+:::
+
+## Objects
+使用对象（不推荐）或者自定义类型来规定对象类型。
+
+```typescript
+// 使用对象类型
+const personal:{
+  readonly id: number,
+  name: string,
+  age: number,
+  local?: boolean
+} = {
+  id: 1,
+  name: 'zhang',
+  age: 28
+}
+
+// 使用自定义类型
+type Personal = {
+  readonly id: number,
+  name: string,
+  age: number,
+  local?: boolean
+}
+
+const personal1: Personal = {
+  id: 1,
+  name: 'zhang',
+  age: 28
+}
+```
+
+::: warning
+不推荐直接使用对象，可读性低，不可复用。
+:::
+
+## Union Types（联合类型）
+可以为变量或函数参数提供多个类型选择。
+
+```typescript
+function sum(a:number | string): number{
+  return a
+}
+```
+
+### Narrowing（类型锁紧）
+联合类型由于有多个类型判断，可能会遇到无法访问类型方法的问题，这时候我们就需要`Narrowing`，将变量的类型锁紧到适合范围，才能安全的使用类型方法。
+
+常用的类型锁紧方法：`typeof`、`ture / false`、`== / ===`、`if / else / elseif`等。
+
+```typescript
+function sum(a:number | string): number{
+  if(typeof a === 'number'){
+    return a.valueOf() // 这里只有数字类型的方法
+  }else{
+    return parseInt(a.split('')[0]) // 这里只有字符串类型的方法
+  }
+}
+```
+
+## Intersection Types（交叉类型）
+类型A与类型B取交集会产生新的类型，这个类型包含的对象既属于A类型又属于B类型。
+
+```typescript
+type A = {
+  name: string
+}
+
+type B = {
+  age: number,
+}
+
+type C = A & B
+
+const c: C = {
+  name: 'zhang',
+  age: 13
+}
+```
+
+## Literal Types（字面量类型）
+顾名思义，字面量类型的取值限定在可枚举的范围内，从而可以防止一些意外的赋值
+
+```typescript
+type name = 'zhang' | 'wang' | 'zhao'
+
+const n:name = 'zhang'
+```
+
+## Nullable Types
+`strictNullChecks: true`，当值为 null 或 undefined 时，你需要在对该值使用方法或属性之前测试这些值。
+
+```typescript
+function doSomething(x: string | null) {
+  if (x === null) {
+    // do nothing
+  } else {
+    console.log("Hello, " + x.toUpperCase());
+  }
+}
+```
+
+
+
+
+
+
+
 
 
 
