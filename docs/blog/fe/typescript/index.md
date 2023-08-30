@@ -162,14 +162,24 @@ c = true
 ```
 
 ## Any
-表示可以是任何类型，但会失去失`typescript`的类型检查功能，应避免使用它。
+表示可以是任何类型，但会失去失`typescript`的类型检查功能，应避免使用它，但在某些情况下是有用的。
 
 ```typescript
-let c;
+let c: any = 'zhang';
 c = 1
 c = '2'
 c = true
 ```
+::: warning
+隐式类型默认为`any`。
+
+```typescript
+let a // any
+a = 1
+a = '2'
+a = true
+```
+:::
 
 ## Arrays
 由类型注释表示的数组。
@@ -177,11 +187,15 @@ c = true
 ```typescript
 let arr:number[] = [1, 2, 3]
 let arr2:string[] = ['a', 'b', 'c']
-let arr3 = [1, '2', true] // 默认为any类型
+
 ```
-::: tip
-编辑器可以识别数组元素的方法，提高生产力。
-![](./img/arr.png)
+::: warning
+混合类型的数组 默认为数组内元素的联合类型。
+
+```typescript
+let arr3 = [1, '2', true] // (string | number | boolean)
+arr3.push({a: 1}) // error
+```
 :::
 
 ## Tuples
@@ -190,9 +204,6 @@ let arr3 = [1, '2', true] // 默认为any类型
 ```typescript
 let arr:[number, string] = [1, 'a']
 ```
-::: tip
-同数组一样， 编辑器可以识别数组元素的方法，提高生产力。
-:::
 
 ::: warning
 虽然`Tuples`规定了数组的长度和类型，但是使用`push`方法可用并且不会报错。
