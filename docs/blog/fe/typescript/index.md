@@ -35,7 +35,7 @@ npm i typescript
 tsc --init
 ```
 ### 属性解析
-```typescript
+```json5
 {
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
@@ -251,16 +251,21 @@ let y:Size = Size.M // M
 规定函数形参和返回值的数据类型。
 
 ```typescript
-function sum(a: number, b:number): number{
-  return 1
+type func =  (a: string, b: string) => void
+let greet: func = (a, b)=>{
+  console.log(a + b)
 }
+
+greet(1, 2) // error
+greet('1', '2')
+
 ```
 
 ::: tip
-- 忽略函数返回值默认为`any`类型
+- 忽略函数返回值默认为`void`类型
 - 检测未使用的形参：`noUnusedParameters: true`。
 - 检测未使用的变量：`noUnusedLocals: true`。
-- 隐式返回检测：`noImplicitReturns: true`。
+- 隐式返回检测：`noImplicitReturns: true`，全路径下都必须有返回值。
 ```typescript
 function loop(a: number){
   if(a > 100){
