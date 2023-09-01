@@ -11,8 +11,8 @@ hero:
       text: 门户导航
       link: /docs/blog/portal/index
     - theme: brand
-      text: wanado.js
-      link: 'https://www.npmjs.com/package/wanado'
+      text: speedfix.js
+      link: 'https://www.npmjs.com/package/speedfix'
 
 ---
 
