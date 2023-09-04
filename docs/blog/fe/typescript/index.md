@@ -153,16 +153,16 @@ tsc --init
 
 ```typescript
 let b = 2
-b = '3' // error
+b = '3' // 报错
 
 let c;
-c = 1
-c = '2'
-c = true
+c = 1 // 不报错
+c = '2' // 不报错
+c = true // 不报错
 ```
 
 ## Any
-表示可以是任何类型，但会失去失`typescript`的类型检查功能，应避免使用它，但在某些情况下是有用的。
+表示没有任何限制，该类型的变量可以赋予任意类型的值。
 
 ```typescript
 let c: any = 'zhang';
@@ -171,15 +171,65 @@ c = '2'
 c = true
 ```
 ::: warning
-隐式类型默认为`any`。
+`any`会失去`typescript`的类型检查功能，应避免使用它，但在某些情况下是有用的，比如一些第三方应用。
+:::
+
+### 类型推断问题
+对于开发者没有指定类型、类型推断又无法推断出类型的情况下，该类型就是`any`。  
+
+`noImplicitAny: true`：只要推断出any类型就会报错。
 
 ```typescript
-let a // any
-a = 1
-a = '2'
-a = true
+function sum(x, y) {
+  return x + y;
+}
+
+sum('a', {a: 1}) // 不报错
 ```
-:::
+
+### 污染问题
+由于`any`不进行类型检查，将`any`类型的值赋给任何一种类型的变量，都是可行的，并且不会报错，这将将导致运行时错误。
+
+```typescript
+let a: any = 'string'
+let b: number;
+
+b = a
+
+b.toFixed(2) // 不报错
+b * 2 // 不报错
+
+```
+
+### unKnown
+可以理解为严格版的`any`，`unknown`类型的值不允许赋值给其他类型的变量，不能调用`unknown`类型变量的属性和方法，只能进行比较运算等简单运算符。
+
+```typescript
+let obj: unknown = 123
+let b: number;
+
+b = obj // 报错
+obj.toFixed() // 报错
+obj += 1 // 报错
+obj === 123 // 不报错
+```
+
+### never
+类型为空，不包含任何值，可以赋值给任意其他类型。
+
+```typescript
+let a: never;
+a = 1 // 报错
+
+let f = (): never => {
+  throw new Error()
+}
+
+let b: string = f() // 不报错
+let c: number = f() // 不报错
+```
+
+
 
 ## Arrays
 由类型注释表示的数组。
