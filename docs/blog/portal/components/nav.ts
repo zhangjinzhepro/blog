@@ -680,6 +680,12 @@ export const NAV_DATA: NavData[] = [
         link: 'http://www.ruanyifeng.com/'
       },
       {
+        title: '网道',
+        desc: '网道教程',
+        icon: 'https://wangdoc.com/assets/icons/favicon-32x32.png\n',
+        link: 'https://wangdoc.com/'
+      },
+      {
         title: '张鑫旭的个人主页',
         desc: '张鑫旭的个人主页',
         icon: 'https://www.zhangxinxu.com/favicon.ico\n',
