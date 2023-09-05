@@ -149,7 +149,8 @@ tsc --init
 ```
 
 ## 类型推断
-当省略类型时，`typescript`会自动推断变量类型。 当定义一个未初始化的变量时，该变量为 `any` 类型
+当省略类型时，`typescript`会自动推断变量类型。  
+当定义一个未初始化的变量时，该变量为 `any` 类型
 
 ```typescript
 let b = 2
@@ -202,7 +203,8 @@ b * 2 // 不报错
 ```
 
 ### unKnown
-可以理解为严格版的`any`，`unknown`类型的值不允许赋值给其他类型的变量，不能调用`unknown`类型变量的属性和方法，只能进行比较运算等简单运算符。
+可以理解为严格版的`any`。  
+`unknown`类型的值不允许赋值给其他类型的变量，不能调用`unknown`类型变量的属性和方法，只能进行比较运算等简单运算符。
 
 ```typescript
 let obj: unknown = 123
@@ -228,27 +230,105 @@ let f = (): never => {
 let b: string = f() // 不报错
 let c: number = f() // 不报错
 ```
+## undefined 和 null
+表示未定义和空值。  
 
+在`typescript`中，其他任意类型都可以赋值为`undefined`和`null`，可能会造成错误。  
 
+使用：`strictNullChecks: true`启用严格的控制检查，`undefined`和`null`就不能赋值给其他类型的变量（除了any类型和unknown类型）。
 
-## Arrays
-由类型注释表示的数组。
+```typescript
+let a:number = 1
+a = null // 不报错
+a = undefined // 不报错
+
+let obj:object = undefined
+obj.toString() // 不报错
+```
+
+## 字面量类型（Literal Types）
+顾名思义，字面量类型的取值限定于某个值，从而可以防止一些意外赋值。
+
+一般结合联合类型做枚举。
+
+```typescript
+let n:'zhang' = 'zhang'
+n = 'zhao' // 报错
+
+let m:'zhang' | 'wang' | 'zhao' = 'zhao' // 不报错
+let o:'zhang' | 'wang' | 'zhao' = 'li'  // 报错
+```
+
+### 类型缩小（Narrowing）
+联合类型由于有多个类型判断，可能会遇到无法访问类型方法的问题，这时候我们就需要`Narrowing`，将变量的类型锁紧到适合范围，才能安全的使用类型方法。
+
+常用的类型锁紧方法：`typeof`、`ture / false`、`== / ===`、`if / else / elseif`等。
+
+```typescript
+function sum(a:number | string): number{
+  if(typeof a === 'number'){
+    return a.valueOf() // 这里只有数字类型的方法
+  }else{
+    return parseInt(a.split('')[0]) // 这里只有字符串类型的方法
+  }
+}
+```
+
+## 数组
+数组在`typescript`里面分成两种类型，分别是数组和元组。
+
+### 数组（array）
+所有成员的类型必须相同。  
+
+如果数组成员的类型比较复杂，可以写在圆括号里面。
 
 ```typescript
 let arr:number[] = [1, 2, 3]
 let arr2:string[] = ['a', 'b', 'c']
 
+let arr3: (string | number | boolean)[] = [true, 1, 'a'] // 不报错
 ```
 ::: warning
-混合类型的数组 默认为数组内元素的联合类型。
+数组的类型推断默认为数组内元素的联合类型。  
 
+如果变量的初始值是空数组，那么`typescript`会推断数组类型是any[]。
 ```typescript
 let arr3 = [1, '2', true] // (string | number | boolean)
-arr3.push({a: 1}) // error
+arr3.push({a: 1}) // 报错
+
+let arr = [] // any[]
 ```
 :::
 
-## Tuples
+#### 只读数组
+使用`var`，`let`，`const` 声明的数组是可以改变成员的。有时我们需要一个只读数组的需求，即不可以改变成员，方法是在数组类型前面加上`readonly`关键字。
+
+```typescript
+var arr = [0, 1];
+arr[0] = 2; // 不报错
+
+var arr1: readonly number[] = [0, 1];
+arr1[0] = 2; // 报错
+```
+::: warning
+只读数组和普通数组是不同的类型。普通数组是制度数组的子类型。
+```typescript
+const sum = (arr: number[]) => {}
+const arr: readonly number[] = [1, 2]
+sum(arr) // 报错
+
+const arr1:number[] = [0, 1];
+const arr2:readonly number[] = arr1; // 不报错
+arr1 = arr2; // 报错
+```
+:::
+
+#### 多维数组
+```typescript
+const arr:number[][] = [[1,2,3], [1,2,3]]
+```
+
+### Tuples（元组）
 元组是固定长度的数组，并且规定每个元素的类型。
 
 ```typescript
@@ -263,7 +343,7 @@ arr3.push(1) // 正常
 ```
 :::
 
-## Enums（元组）
+## Enums
 定义一组命名的常量。
 
 ```typescript
@@ -370,22 +450,9 @@ function sum(a:number | string): number{
 }
 ```
 
-### Narrowing（类型锁紧）
-联合类型由于有多个类型判断，可能会遇到无法访问类型方法的问题，这时候我们就需要`Narrowing`，将变量的类型锁紧到适合范围，才能安全的使用类型方法。
 
-常用的类型锁紧方法：`typeof`、`ture / false`、`== / ===`、`if / else / elseif`等。
 
-```typescript
-function sum(a:number | string): number{
-  if(typeof a === 'number'){
-    return a.valueOf() // 这里只有数字类型的方法
-  }else{
-    return parseInt(a.split('')[0]) // 这里只有字符串类型的方法
-  }
-}
-```
-
-## Intersection Types（交叉类型）
+## 交叉类型（Intersection Types）
 类型A与类型B取交集会产生新的类型，这个类型包含的对象既属于A类型又属于B类型。
 
 ```typescript
@@ -405,14 +472,7 @@ const c: C = {
 }
 ```
 
-## Literal Types（字面量类型）
-顾名思义，字面量类型的取值限定在可枚举的范围内，从而可以防止一些意外的赋值
 
-```typescript
-type name = 'zhang' | 'wang' | 'zhao'
-
-const n:name = 'zhang'
-```
 
 ## Nullable Types
 `strictNullChecks: true`，当值为 null 或 undefined 时，你需要在对该值使用方法或属性之前测试这些值。
