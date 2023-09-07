@@ -328,18 +328,44 @@ arr1 = arr2; // 报错
 const arr:number[][] = [[1,2,3], [1,2,3]]
 ```
 
-### Tuples（元组）
-元组是固定长度的数组，并且规定每个元素的类型。
+### 元组（Tuples）
+元组并且必须明确声明每个成员的类型。  
+
+可以用扩展运算符`...`表示不限长度的元组。
 
 ```typescript
-let arr:[number, string] = [1, 'a']
+const arr:[number, string] = [1, 'a']
+
+const arr1:[number, ...string[], number] = [1,'2','3', 4]
+const arr2:[...any[]] = [1,'2', true, {a: 1}]
 ```
 
-::: warning
-虽然`Tuples`规定了数组的长度和类型，但是使用`push`方法可用并且不会报错。
+#### 只读元组
+
+```typescript
+const arr: readonly [number, string] = [1, 'a']
+```
+
+#### 长度推断
+`typescript`会自动推断元组的长度。
+
+如果使用扩展运算符将无法推断。
+
+```typescript
+type Tuple = readonly [string, number?, Date?];
+const a: Tuple = ['1']
+a.length === 5 // 报错
+
+type Tuple1 = readonly [string, ...number[]];
+const b: Tuple1 = ['1',1]
+b.length === 5 // 不报错
+```
+
+::: danger
+虽然`Tuples`规定了数组内元素类型，但是使用`push`方法可用并且不会报错。
 ```typescript
 let arr3:[number, string] = [1, 'a']
-arr3.push(1) // 正常
+arr3.push(1) // 不报错
 ```
 :::
 
