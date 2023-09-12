@@ -705,4 +705,34 @@ export const NAV_DATA: NavData[] = [
       },
     ]
   },
+  {
+    title: '内容管理',
+    items: [
+      {
+        title: 'VitePress',
+        desc: '简单、强大、快速。满足您一直想要的现代SSG框架。',
+        icon: 'https://vitepress.dev/vitepress-logo-mini.svg',
+        link: 'https://vitepress.dev/'
+      },
+      {
+        title: 'VuePress',
+        desc: 'Vue 驱动的静态网站生成器',
+        icon: 'https://vuepress.vuejs.org/hero.png',
+        link: 'https://wangdoc.com/'
+      },
+      {
+        title: 'docsify',
+        desc: '一个神奇的文档网站生成器。',
+        icon: 'https://docsify.js.org/_media/favicon.ico\n',
+        link: 'https://docsify.js.org/#/zh-cn/'
+      },
+      {
+        title: 'Jekyll',
+        desc: '将纯文本转化为静态网站和博客。',
+        icon: 'https://www.jekyll.com.cn/favicon.ico\n',
+        link: 'https://www.jekyll.com.cn/'
+      },
+
+    ]
+  },
 ]
