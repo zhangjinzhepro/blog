@@ -30,6 +30,11 @@ export default defineConfig(
     themeConfig: {
       lastUpdated: {
         text: '本文更新于 ',
+        formatOptions:{
+          year: "numeric",
+          month: "numeric",
+          day: "numeric"
+        }
       },
       search: {
         provider: 'local'
@@ -41,12 +46,13 @@ export default defineConfig(
       },
       nav: routers.nav,
       sidebar: routers.sidebar,
+
       docFooter: {
-        prev: '上一篇',
-        next: '下一篇'
+        prev: false,
+        next: false,
       },
       outline: {
-        level: 'deep',
+        level: [2,3],
         label: '目录'
       },
       socialLinks: [

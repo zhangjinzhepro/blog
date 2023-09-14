@@ -1,20 +1,20 @@
 <template>
   <div class="comments">
     <giscus
-      repo="zhangjinzhepro/blog"
-      repo-id="MDEwOlJlcG9zaXRvcnkyNTI4OTA0OTM="
-      category="General"
-      category-id="DIC_kwDODxLNfc4CV3Ab"
-      mapping="pathname"
-      strict="0"
-      reactions-enabled="1"
-      emit-metadata="0"
-      input-position="top"
-      theme="preferred_color_scheme"
-      lang="zh-CN"
-      loading="lazy"
-      crossorigin="anonymous"
-      async
+        repo="zhangjinzhepro/blog"
+        repo-id="MDEwOlJlcG9zaXRvcnkyNTI4OTA0OTM="
+        category="Comments"
+        category-id="DIC_kwDODxLNfc4CZTAT"
+        mapping="title"
+        strict="1"
+        reactions-enabled="1"
+        emit-metadata="0"
+        input-position="top"
+        theme="preferred_color_scheme"
+        lang="zh-CN"
+        loading="lazy"
+        crossorigin="anonymous"
+        async
     />
   </div>
 </template>

@@ -3,6 +3,7 @@ import { h } from 'vue'
 import Theme from 'vitepress/theme'
 import './style.css'
 import {useData} from "vitepress";
+// @ts-ignore
 import giscus from './giscus.vue'
 
 export default {
