@@ -68,7 +68,7 @@ const svg = computed(() => {
     width: 48px;
     height: 48px;
     font-size: 24px;
-    background-color: var(--vp-c-mute);
+    background-color: #f2f2f2;;
     transition: background-color 0.25s;
     :deep(svg) {
       width: 24px;
