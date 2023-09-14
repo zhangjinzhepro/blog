@@ -3,7 +3,7 @@ import { h } from 'vue'
 import Theme from 'vitepress/theme'
 import './style.css'
 import {useData} from "vitepress";
-
+import giscus from './giscus.vue'
 
 export default {
   ...Theme,
@@ -16,7 +16,9 @@ export default {
           props.class = frontmatter.value.layoutClass
       }
 
-      return h(Theme.Layout, props)
+      return h(Theme.Layout, props, {
+        "doc-after": () => h(giscus),
+      })
   },
   enhanceApp({ app, router, siteData }) {
   }

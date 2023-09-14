@@ -60,18 +60,22 @@ const nav = [
   {
     text: "其他技术",
     link: '/docs/blog/其他技术/Git/Git入门',
+    items: []
   },
   {
     text: "读书笔记",
-    link: '/docs/blog/读书/南京大屠杀'
+    link: '/docs/blog/读书/南京大屠杀',
+    items: []
   },
   {
     text: "随想",
-    link: "/docs/blog/随想/纪念左耳朵耗子"
+    link: "/docs/blog/随想/纪念左耳朵耗子",
+    items: []
   },
   {
     text: "一些概念",
-    link: "/docs/blog/概念/马太效应"
+    link: "/docs/blog/概念/马太效应",
+    items: []
   },
 ]
 

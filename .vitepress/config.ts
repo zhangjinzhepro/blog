@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import routers from "./router";
 import mdItCustomAttrs from 'markdown-it-custom-attrs'
 // https://vitepress.dev/reference/site-config
+
 export default defineConfig(
   {
     markdown:{
@@ -26,21 +27,17 @@ export default defineConfig(
       ],
       ["script",{ src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"}],
     ],
-    lastUpdated: true,
     themeConfig: {
+      lastUpdated: {
+        text: '本文更新于 ',
+      },
       search: {
         provider: 'local'
       },
       returnToTopLabel: '返回顶部',
-      // algolia: {
-      //   appId: 'PDEGHFPKIN',
-      //   apiKey: '6f186bf493b18009f5fd2b63a468d0e1',
-      //   indexName: 'zhangjinzhe.cn'
-      // },
       logo:  '/images/logo.webp',
       footer: {
-        // message: '<a href="https://beian.miit.gov.cn/" target="_blank" style="text-decoration: underline; color: #144a74">鲁ICP备2022007356号-1</a>',
-        copyright: 'Copyright © 2020 - present 张晋哲</a>'
+        copyright: 'Copyright © 张晋哲</a>'
       },
       nav: routers.nav,
       sidebar: routers.sidebar,

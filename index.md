@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: 张晋哲的博客
-#  text: 分享
+  #  text: 分享
   tagline: 路漫漫其修远兮，吾将上下而求索。
   actions:
     - theme: brand

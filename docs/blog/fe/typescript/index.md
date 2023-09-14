@@ -152,7 +152,7 @@ tsc --init
 当省略类型时，`typescript`会自动推断变量类型。  
 当定义一个未初始化的变量时，该变量为 `any` 类型
 
-```typescript
+```js
 let b = 2
 b = '3' // 报错
 
