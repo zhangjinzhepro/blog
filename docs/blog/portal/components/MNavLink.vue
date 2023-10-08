@@ -19,16 +19,8 @@ const svg = computed(() => {
 <template>
   <a v-if="link" class="m-nav-link" :href="link" target="_blank" rel="noreferrer">
     <article class="box">
-      <div class="box-header">
-        <div v-if="icon.includes('http')" class="icon">
-          <img :src="icon" :alt="title" onerror="this.parentElement.style.display='none'" />
-        </div>
-        <div v-else class="icon">
-          {{icon}}
-        </div>
-        <h5 v-if="title" class="title">{{ title }}</h5>
-      </div>
-      <p v-if="desc" class="desc">{{ desc }}</p>
+      <h5 v-if="title" class="title" :title="title">{{ title }}</h5>
+      <p v-if="desc" class="desc" :title="desc">{{ desc }}</p>
     </article>
   </a>
 </template>
@@ -41,10 +33,10 @@ const svg = computed(() => {
   height: 100%;
   cursor: pointer;
   transition: all 0.3s;
+  text-decoration: none !important;
   &:hover {
-    background-color: var(--vp-c-bg-soft);
+    //background-color: var(--vp-c-bg-soft);
     border-color: var(--vp-c-brand);
-    text-decoration: none !important;
   }
 
   .box {
@@ -59,35 +51,14 @@ const svg = computed(() => {
     }
   }
 
-  .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 12px;
-    border-radius: 6px;
-    width: 48px;
-    height: 48px;
-    font-size: 24px;
-    background-color: #f2f2f2;;
-    transition: background-color 0.25s;
-    :deep(svg) {
-      width: 24px;
-      fill: currentColor;
-    }
-    :deep(img) {
-      border-radius: 4px;
-      width: 24px;
-    }
-  }
-
   .title {
     overflow: hidden;
-    flex: 1;
     white-space: nowrap;
     text-overflow: ellipsis;
-    line-height: 48px;
     font-size: 16px;
     font-weight: 600;
+    border-left: 5px solid #5468ff;
+    padding: 0 0 0 10px;
   }
 
   .desc {
