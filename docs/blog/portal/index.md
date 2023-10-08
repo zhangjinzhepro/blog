@@ -1,7 +1,5 @@
 ---
 layout: doc
-layoutClass: m-nav-layout
-lastUpdated: true
 ---
 
 <script setup>
