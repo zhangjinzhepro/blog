@@ -9,15 +9,7 @@ import giscus from './giscus.vue'
 export default {
   ...Theme,
   Layout: () => {
-      const props: Record<string, any> = {}
-      const { frontmatter } = useData()
-
-      /* 添加自定义 class */
-      if (frontmatter.value?.layoutClass) {
-          props.class = frontmatter.value.layoutClass
-      }
-
-      return h(Theme.Layout, props, {
+      return h(Theme.Layout, {}, {
         "doc-after": () => h(giscus),
       })
   },
