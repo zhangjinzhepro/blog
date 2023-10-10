@@ -253,6 +253,10 @@ const sidebar = {
       text: "烟台出差",
       link: "/docs/blog/随想/烟台出差"
     },
+    {
+      text: "二人食",
+      link: "/docs/blog/随想/二人食"
+    },
   ],
   '/docs/blog/概念': [
     {
