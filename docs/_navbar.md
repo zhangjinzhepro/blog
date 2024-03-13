@@ -1,4 +1,4 @@
 - [Home](/)
 
-- [前端花园](fe/js/type.md)
+- [前端花园](js/type.md)
 
