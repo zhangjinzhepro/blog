@@ -6,6 +6,6 @@ style="display: block; width: 100px; margin: auto; margin-bottom: 3em"
 路漫漫其修远兮，吾将上下而求索。
 </p>
 
-[remoteMarkdownUrl](_navbar.md)
+[remoteMarkdownUrl](https://raw.githubusercontent.com/zhangjinzhepro/blog/master/docs/_navbar.md)
 
 
