@@ -50,10 +50,6 @@ Server: Apache 0.84
 
 ## 三次握手
 
-- SYN：
-- SYN+ACK
-- ACK
-
 ```swimlanes-io
 客户端 -> 服务端 : SYN `x = random()`
 note:客户端发送随机数`x`
