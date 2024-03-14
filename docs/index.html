@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="//unpkg.com/docsify@4/lib/themes/vue.css">
 <!--    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="//unpkg.com/katex@latest/dist/katex.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/docsify-giscus@1.0.0/dist/giscus.css">
-<!--    <link rel="stylesheet" href="//unpkg.com/docsify-toc@1.0.0/dist/toc.css">-->
+    <link rel="stylesheet" href="//unpkg.com/docsify-giscus@1.0.0/dist/giscus.css">
+    <link rel="stylesheet" href="//unpkg.com/docsify-toc@1.0.0/dist/toc.css">
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body class="no-sidebar">
@@ -41,26 +41,17 @@
        themeColor: '#2980B9',
 
        alias: {
-         '/.*/_navbar.md': '/_navbar.md',
          '/fe/.*/_sidebar.md': '/fe/_sidebar.md',
-         '/guide/.*/_sidebar.md': '/guide/_sidebar.md',
-         '/examples/.*/_sidebar.md': '/examples/_sidebar.md',
-         '/customization/(.*)': '/guide/customization/$1',
-         '/developer-zone/(.*)': '/guide/developer-zone/$1',
-         '/occa/(.*)': '/guide/occa/$1',
-         '/okl/(.*)': '/guide/okl/$1',
-         '/user-guide/(.*)': '/guide/user-guide/$1',
          '/js/(.*)': '/fe/js/$1',
-         '/c/(.*)': '/examples/c/$1',
-         '/cpp/(.*)': '/examples/cpp/$1',
-         '/py/(.*)': '/examples/py/$1'
+         '/http/(.*)': '/fe/http/$1',
+
        },
 
        auto2top: true,
        loadSidebar: true,
        maxLevel: 2,
        loadNavbar: true,
-       subMaxLevel: 3,
+       subMaxLevel: 1,
 
        markdown: {
          renderer: {
@@ -121,10 +112,15 @@
          lang: "zh-CN",
          loading: "lazy",
        },
-
+       toc: {
+         scope: '.markdown-section',
+         headings: 'h2, h3, h4, h5, h6',
+         title: '目录',
+       },
      };
     </script>
     <script src="//unpkg.com/docsify@4/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/prismjs@1.29.0/components/prism-bash.min.js"></script>
     <script src="//unpkg.com/prismjs@1.29.0/components/prism-typescript.min.js"></script>
     <script src="//unpkg.com/katex@latest/dist/katex.min.js"></script>
     <script src="//unpkg.com/docsify-latex@0"></script>
@@ -134,7 +130,7 @@
     <script src="//unpkg.com/docsify-plugin-flexible-alerts"></script>
     <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
     <script src="//unpkg.com/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
-
-    <script src="https://unpkg.com/docsify-giscus@1.0.0/dist/docsify-giscus.min.js"></script>
+    <script src="//unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
+    <script src="//unpkg.com/docsify-giscus@1.0.0/dist/docsify-giscus.min.js"></script>
   </body>
 </html>

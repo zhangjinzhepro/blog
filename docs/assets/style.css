@@ -5,6 +5,10 @@
   padding-left: 1em;
   border-left: 1px solid #ededed;
 }
+.page_toc{
+    top: 80px;
+    background: #f2f2f2;
+}
 body[data-page='README.md'] .app-nav, body[data-page='README.md'] .giscus{
     display: none;
 }

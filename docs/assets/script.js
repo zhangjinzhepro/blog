@@ -70,7 +70,7 @@ script.markdown.code = ({ lang, text }) => {
           + `<code class="lang-${lang}">`
           + `${styledCode}\n`
           + '</code>'
-          + '</pre> <br>'
+          + '</pre>'
       )
         .replace(/[*]/g, '&#42;')
         .replace(/[_]/g, '&#95;')
@@ -91,7 +91,6 @@ script.docsifyPlugin = (hook, vm) => {
 
     if (script.hasSidebar(file)) {
       body.classList.remove('no-sidebar');
-
     } else {
       body.classList.add('no-sidebar');
     }
