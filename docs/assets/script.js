@@ -55,7 +55,7 @@ script.markdown.code = ({ lang, text }) => {
   }
   if(lang === 'js'){
     return (
-      `  <div data-runkit>
+      `<div data-runkit>
        <pre data-lang="${lang}">`
       + `<code class="lang-${lang}">`
       + `${styledCode}\n`
@@ -88,7 +88,7 @@ script.docsifyPlugin = (hook, vm) => {
     const file = vm.route.file;
 
     const body = document.querySelector('body');
-    
+
     if (script.hasSidebar(file)) {
       body.classList.remove('no-sidebar');
 

@@ -8,6 +8,16 @@
 body[data-page='README.md'] .app-nav{
     display: none;
 }
+body[data-page='README.md'] p{
+    text-align: center;
+}
+body[data-page='README.md'] li{
+    list-style: none;
+}
+body[data-page='README.md'] li:nth-child(1){
+    display: none;
+}
+
 
 .desktop-only {
     display: unset;
