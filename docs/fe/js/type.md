@@ -3,6 +3,7 @@
 
 数值分为整数和浮点数，可使用十进制，八进制，十六进制和科学计数法来表示。
 
+<div data-runkit>
 
 ```js
 var a = 1
@@ -13,6 +14,7 @@ var e = 1.23e7
 
 console.log(a,b,c,d,e)
 ```
+</div>
 
 
 ### NaN
@@ -24,25 +26,29 @@ console.log(a,b,c,d,e)
 
 `number`类型无法安全地表示大于 $2^{53}-1$（即`9007199254740991`），或小于 ($-2^{53}-1$) 的整数。
 
+> [!attention]
+> `bigInt`类型与`number`类型不兼容，不能直接计算。
+
+<div data-runkit>
 
 ```js
 const bigInt = BigInt(1234567890123456789012345678901234567890);
 ```
-  
+</div>
 
-
-> [!attention]
-> `bigInt`类型与`number`类型不兼容，不能直接计算。
 
 ## String
 
 String类型必须被括在引号里。
+
+<div data-runkit>
 
 ```js
 let str = "Hello";  // 双引号
 let str2 = 'Single quotes are ok too';  // 单引号
 let phrase = `can embed another ${str}`;  // 反引号
 ```
+</div>
 
 ## Boolean
 
@@ -56,14 +62,19 @@ let phrase = `can embed another ${str}`;  // 反引号
 
 表示未被赋值。
 
+<div data-runkit>
+
 ```js
 var str;
 console.log(str) // undefined
 ```
+</div>
 
 ## Symbol
 
 表示唯一的标识符。
+
+<div data-runkit>
 
 ```js
 let user = { 
@@ -76,6 +87,7 @@ user[id] = 1
 
 console.log(user, user[id], user.id)
 ```
+</div>
 
 ### 隐藏属性
 
@@ -83,27 +95,31 @@ console.log(user, user[id], user.id)
 
 通过相同的`description`获取相同的`symbol`。
 
+<div data-runkit>
+
 ```js
 let id = Symbol.for("id"); // 如果该 symbol 不存在，则创建它
 let idAgain = Symbol.for("id");
 console.log( id === idAgain );
 ```
+</div>
 
 #### Symbol.keyFor
 
 和`Symbol.for`相反，通过`symbol`获取`description`。
 
-```js
-let id = Symbol.for('id')
-console.log(Symbol.keyFor(id))
-```
-
 > [!warning]
 > `Symbol.keyFor`只针对`Symbol.for`创建的`symbol`有效。
-> ```js
-> let name = Symbol('id')
-> console.log(Symbol.keyFor(name))
-> ```
+
+<div data-runkit>
+
+```js
+let id = Symbol.for('id')
+let name = Symbol('id')
+console.log(Symbol.keyFor(id),Symbol.keyFor(name))
+```
+</div>
+
 
 - Symbol.hasInstance ：当其他对象使用instanceof 判断是否为该对象的实例时会调用。
 - Symbol.isConcatSpeardable：使用cancat()是否展开。
@@ -125,12 +141,12 @@ console.log(Symbol.keyFor(id))
 
 ### 1.typeof
 
-只能识别原始类型和引用类型。
+只能识别原始类型和引用类型。`typeof x`和 `typeof(x)`相同，这里的括号不是`typeof`的一部分。它是数学运算分组的括号。
 
 > [!note]
 > JavaScript 编程语言的设计错误，JavaScript 在存储数据的时候会转换成32位存储，null的标签类型和object一样都是000 [链接](https://2ality.com/2013/10/typeof-null.html)。
 
-`typeof x`和 `typeof(x)`相同，这里的括号不是`typeof`的一部分。它是数学运算分组的括号。
+<div data-runkit>
 
 ```js
 console.log(typeof 1)
@@ -144,10 +160,13 @@ console.log(typeof {})
 console.log(typeof console)
 console.log(typeof console.log)
 ```
+</div>
 
 ### 2.constructor
 
 指向当前实例的构造函数。
+
+<div data-runkit>
 
 ```js
 let str = 'Covid-19'
@@ -165,10 +184,16 @@ console.log(fun.constructor)
 let obj = {}
 console.log(obj.constructor)
 ```
+</div>
 
 ### 3. instanceof
 
 在原型链上查找其是否为构造函数实例。
+
+> [!warning]
+> 原始类型类型在JavaScript中是没有原型链的。所以 instanceof 操作符对原始类型来说只会返回false。
+
+<div data-runkit>
 
 ```js
 let arr = [1,2,3]
@@ -179,23 +204,25 @@ console.log(fun instanceof Function)
 
 let obj = {}
 console.log(obj instanceof Object)
-```
+  
+let number = 123;
+console.log(number instanceof Number);
 
-> [!warning]
-> 原始类型类型在JavaScript中是没有原型链的。所以 instanceof 操作符对原始类型来说只会返回false。
-> ```js
-> let number = 123;
-> console.log(number instanceof Number);
-> let string = '123'
-> console.log(number instanceof String);
-> let boolean = true
-> console.log(number instanceof Boolean);
-> ```
+let string = '123'
+console.log(number instanceof String);
+
+let boolean = true
+console.log(number instanceof Boolean);
+```
+</div>
+
 
 
 ### 4.Object.prototype.toString
 
 可以很好的判断数据类型，封装成方法即可。
+
+<div data-runkit>
 
 ```js
 console.log(Object.prototype.toString({}))       
@@ -210,10 +237,13 @@ console.log(Object.prototype.toString.call(/123/g))
 console.log(Object.prototype.toString.call(new Date())) 
 console.log(Object.prototype.toString.call([]))       
 ```
+</div>
 
 ### 5.鸭子类型检测
 
 通过检查自身特定属性来判断
+
+<div data-runkit>
 
 ```js
 let str = 'Covid-19'
@@ -222,11 +252,15 @@ console.log(str.toLowerCase())
 let arr = [1,2,3]
 console.log(arr.join(','))
 ```
+</div>
 
 ### 6.等比较
+
+<div data-runkit>
 
 ```js
 console.log(null === null)
 
 console.log(undefined === void 0)
 ```
+</div>
