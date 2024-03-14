@@ -5,7 +5,7 @@
   padding-left: 1em;
   border-left: 1px solid #ededed;
 }
-body[data-page='README.md'] .app-nav{
+body[data-page='README.md'] .app-nav, body[data-page='README.md'] .giscus{
     display: none;
 }
 body[data-page='README.md'] p{
