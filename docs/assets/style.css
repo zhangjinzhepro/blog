@@ -9,7 +9,7 @@
     top: 80px;
     background: #f2f2f2;
 }
-body[data-page='README.md'] .app-nav, body[data-page='README.md'] .giscus{
+body[data-page='README.md'] .app-nav, body[data-page='README.md'] .giscus, body[data-page='README.md'] .docsify-pagination-container{
     display: none;
 }
 body[data-page='README.md'] p{
