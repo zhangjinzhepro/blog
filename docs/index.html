@@ -4,23 +4,8 @@
     <meta charset="UTF-8">
     <title>晋哲的博客</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-<!--    <meta name="description" content="JIT Compilation for Multiple Architectures: C++, OpenMP, CUDA, HIP, OpenCL, Metal">-->
-<!--    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
-<!--    <meta name="google-site-verification" content="y6weeT6Po7QSqWAi0aCB5jhiIWtkIm8Go1TuxaMzl8k" />-->
-
-<!--    <meta property="og:title" content="OCCA" />-->
-<!--    <meta property="og:type" content="website" />-->
-<!--    <meta property="og:url" content="//libocca.org" />-->
-<!--    <meta property="og:image" content="//libocca.org/assets/images/logo/blue.png" />-->
-<!--    <meta property="og:description" content="JIT Compilation for Multiple Architectures: C++, OpenMP, CUDA, HIP, OpenCL, Metal" />-->
-
-<!--    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">-->
-<!--    <link rel="stylesheet" href="//unpkg.com/vue-material@beta/dist/vue-material.min.css">-->
     <link rel="stylesheet" href="//unpkg.com/docsify@4/lib/themes/vue.css">
-<!--    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="//unpkg.com/katex@latest/dist/katex.min.css" />
-    <link rel="stylesheet" href="//unpkg.com/docsify-giscus@1.0.0/dist/giscus.css">
     <link rel="stylesheet" href="//unpkg.com/docsify-toc@1.0.0/dist/toc.css">
     <link rel="stylesheet" href="assets/style.css">
   </head>
@@ -30,36 +15,35 @@
 
     <script>
      window.$docsify = {
+       search: {
+         placeholder: {
+           '/': '搜索',
+         },
+         noData:{
+           '/': '无结果',
+         },
+         depth: 6,
+       },
        name: (
          '<img'
          + '  src="./assets/images/logo/logo.webp"'
          + '  width="50"'
          + '/>'
        ),
-       // search: true,
        repo: 'zhangjinzhepro/blog',
        themeColor: '#2980B9',
 
        alias: {
+         '/.*/_navbar.md': '/_navbar.md',
          '/fe/.*/_sidebar.md': '/fe/_sidebar.md',
          '/js/(.*)': '/fe/js/$1',
-         '/http/(.*)': '/fe/http/$1',
-
+         '/browser/(.*)': '/fe/browser/$1',
        },
-
        auto2top: true,
        loadSidebar: true,
        maxLevel: 2,
        loadNavbar: true,
        subMaxLevel: 1,
-
-       // markdown: {
-       //   renderer: {
-       //     code: (text, lang) => (
-       //       script.markdown.code({ lang, text })
-       //     ),
-       //   }
-       // },
        runkit:{
          nodeVersion: '18',
          gutterStyle: 'none',
@@ -117,25 +101,33 @@
          headings: 'h2, h3, h4, h5, h6',
          title: '目录',
        },
+       mermaidConfig: {
+         querySelector: ".mermaid"
+       }
      };
+
     </script>
     <script src="//unpkg.com/docsify@4/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <script src="//unpkg.com/prismjs@1.29.0/components/prism-bash.min.js"></script>
     <script src="//unpkg.com/prismjs@1.29.0/components/prism-typescript.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <script src="//unpkg.com/katex@latest/dist/katex.min.js"></script>
     <script src="//unpkg.com/docsify-latex@0"></script>
     <script src="//unpkg.com/docsify-plugin-runkit@1"></script>
-    <script src="//unpkg.com/docsify-pangu/lib/pangu.min.js"></script>
     <script src="//unpkg.com/docsify-count@latest/dist/countable.min.js"></script>
     <script src="//unpkg.com/docsify-plugin-flexible-alerts"></script>
     <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
     <script src="//unpkg.com/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
     <script src="//unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
-    <script src="//unpkg.com/docsify-giscus@1.0.0/dist/docsify-giscus.min.js"></script>
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
     <script src="//unpkg.com/graphre@0.1/dist/graphre.js"></script>
     <script src="//unpkg.com/nomnoml@1.4/dist/nomnoml.js"></script>
-    <script src="//unpkg.com/docsify-swimlanes-io@latest/dist/docsify-swimlanes-io.js"></script>
-
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true });
+      window.mermaid = mermaid;
+    </script>
+    <script src="//unpkg.com/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
   </body>
 </html>

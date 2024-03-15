@@ -28,7 +28,7 @@ GET /index.html
 
 > [!warning]
 > http/1.0的主要缺点之一就是每个连接不能有多个请求。对于任何一个请求，都必须建立在新的连接上，会因为[三次握手](https://www.jinzhe.cc/#/http/index?id=%e4%b8%89%e6%ac%a1%e6%8f%a1%e6%89%8b)导致性能浪费。
-> 
+>
 ```bash
 GET /index.html HTTP/1.0
 Host: jinzhe.cc
@@ -79,12 +79,13 @@ SPDY的出现并不是取代HTTP，而是在HTTP发出请求之前对其修改�
 
 ## 三次握手
 
-```swimlanes-io
-客户端 -> 服务端 : SYN `x = random()`
-note:客户端发送随机数`x`
-服务端 -> 客户端 : SYN+ACK `y = random()`；`x+1`
-note:服务端返回随机数`y`和`x+1`
-客户端 -> 服务端 : ACK `y+1`
-note:客户端发送`y+1`
-客户端 -> 服务端 : 开始发送数据
+```mermaid
+sequenceDiagram
+  客户端 ->> 服务端: SYN `x = random()`
+    Note right of 客户端: 客户端发送随机数`x`
+  服务端 ->> 客户端 : SYN+ACK `y = random()`；`x+1`
+    Note left of 服务端: 服务端返回随机数`y`和`x+1`
+  客户端 ->> 服务端 : ACK `y+1`
+    Note right of 客户端: 客户端发送`y+1`
+  客户端 -->> 服务端 : 开始发送数据
 ```
