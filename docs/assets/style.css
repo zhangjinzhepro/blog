@@ -6,6 +6,9 @@
 body[data-page='README.md'] .app-nav, body[data-page='README.md'] .docsify-pagination-container{
     display: none;
 }
+body[data-page='README.md'] .content{
+    left: 0;
+}
 body[data-page='README.md'] p{
     text-align: center;
 }
@@ -14,4 +17,8 @@ body[data-page='README.md'] li{
 }
 body[data-page='README.md'] li:nth-child(1){
     display: none;
+}
+body.no-sidebar .sidebar,
+body.no-sidebar .sidebar-toggle {
+    display: none !important;
 }
