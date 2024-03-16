@@ -3,7 +3,7 @@
 .page_toc{
     background: #f2f2f2;
 }
-body[data-page='README.md'] .app-nav, body[data-page='README.md'] .docsify-pagination-container{
+body[data-page='README.md'] .app-nav, body[data-page='README.md'] .docsify-pagination-container,body[data-page='README.md'] .nav{
     display: none;
 }
 body[data-page='README.md'] .content{
