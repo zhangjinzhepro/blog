@@ -104,7 +104,12 @@
        },
        mermaidConfig: {
          querySelector: ".mermaid"
-       }
+       },
+       timeUpdater: {
+         text: ">最后更新时间: {docsify-updated}",
+         formatUpdated: "{YYYY}/{MM}/{DD}",
+         whereToPlace: "bottom",  // "top" or "bottom", default to "bottom"
+       },
      };
 
     </script>
@@ -124,6 +129,8 @@
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
     <script src="//unpkg.com/graphre@0.1/dist/graphre.js"></script>
     <script src="//unpkg.com/nomnoml@1.4/dist/nomnoml.js"></script>
+    <script src="//unpkg.com/docsify-updated/src/time-updater.min.js"></script>
+
     <script type="module">
       import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
       mermaid.initialize({ startOnLoad: true });
